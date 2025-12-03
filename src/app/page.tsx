@@ -1,19 +1,34 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SubjectTypeSelector } from "@/components/SubjectTypeSelector";
 import { SubjectSidebar } from "@/components/SubjectSidebar";
 import { CurriculumPanel } from "@/components/CurriculumPanel";
+import { SearchDialog } from "@/components/SearchDialog";
 import { Button } from "@/components/ui/button";
 import { getSubjectsByType, type Subject } from "@/lib/data";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Search } from "lucide-react";
 
 export default function Home() {
   const [selectedType, setSelectedType] = useState<string | null>(null);
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [mobileShowPanel, setMobileShowPanel] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Keyboard shortcut for search (Cmd+K or Ctrl+K)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   useEffect(() => {
     if (selectedType) {
@@ -47,6 +62,13 @@ export default function Home() {
     setMobileShowPanel(false);
   };
 
+  const handleSearchSelect = useCallback((type: string, code: string) => {
+    setSelectedType(type);
+    setSubjects(getSubjectsByType(type as Subject["Type of Subject"]));
+    setSelectedCode(code);
+    setMobileShowPanel(true);
+  }, []);
+
   // Browser view with sidebar and content
   if (selectedType) {
     return (
@@ -67,7 +89,18 @@ export default function Home() {
               {selectedType}
             </span>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-1">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setSearchOpen(true)}
+              className="gap-1.5 h-8 px-2"
+            >
+              <Search className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline text-xs text-muted-foreground">⌘K</span>
+            </Button>
+            <ThemeToggle />
+          </div>
         </header>
 
         {/* Main content */}
@@ -112,6 +145,12 @@ export default function Home() {
             <CurriculumPanel code={selectedCode} />
           </div>
         </div>
+
+        <SearchDialog
+          open={searchOpen}
+          onOpenChange={setSearchOpen}
+          onSelectSubject={handleSearchSelect}
+        />
       </div>
     );
   }
@@ -122,7 +161,18 @@ export default function Home() {
       {/* Header */}
       <header className="h-12 border-b border-border flex items-center justify-between px-4 bg-background shrink-0">
         <span className="text-sm font-medium">CCE &apos;27</span>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setSearchOpen(true)}
+            className="gap-1.5 h-8 px-2"
+          >
+            <Search className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline text-xs text-muted-foreground">⌘K</span>
+          </Button>
+          <ThemeToggle />
+        </div>
       </header>
 
       {/* Hero */}
@@ -136,7 +186,28 @@ export default function Home() {
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
               Browse curriculum details and rank your preferred electives
             </p>
+            <p className="text-xs text-muted-foreground max-w-md mx-auto">
+              This is for helping you view the curriculum. To learn more information to make your choice - use this website by Mugdha Chatterjee:{" "}
+              <a 
+                href="https://manipal-electives.vercel.app/guide" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                https://manipal-electives.vercel.app/guide
+              </a>
+            </p>
           </div>
+
+          {/* Search hint */}
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="mx-auto flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-card hover:bg-accent transition-colors"
+          >
+            <Search className="h-4 w-4 text-muted-foreground" />
+            <span className="text-sm text-muted-foreground">Search subjects...</span>
+            <kbd className="ml-4 px-2 py-0.5 bg-muted rounded text-[10px] text-muted-foreground">⌘K</kbd>
+          </button>
 
           {/* Category Cards */}
           <SubjectTypeSelector
@@ -160,6 +231,12 @@ export default function Home() {
       <footer className="py-3 text-center text-[10px] text-muted-foreground border-t border-border shrink-0">
         Data from MIT records
       </footer>
+
+      <SearchDialog
+        open={searchOpen}
+        onOpenChange={setSearchOpen}
+        onSelectSubject={handleSearchSelect}
+      />
     </div>
   );
 }

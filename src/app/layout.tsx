@@ -21,6 +21,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Commit+Mono:wght@400;700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
         />
+        <script defer src="https://stat.sys256.com/script.js"></script>
       </head>
       <body className="antialiased">
         <ThemeProvider
