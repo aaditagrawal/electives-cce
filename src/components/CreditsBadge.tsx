@@ -12,30 +12,30 @@ export function CreditsBadge({ credits }: CreditsBadgeProps) {
   return (
     <div className="space-y-2">
       {/* Compact display */}
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-1 font-mono text-sm">
+      <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-0.5 sm:gap-1 font-mono text-xs sm:text-sm text-foreground">
           {[L, T, P].map((val, i) => (
             <span key={i} className="flex items-center">
-              <span className="text-muted-foreground text-xs">{labels[i]}</span>
+              <span className="text-muted-foreground text-[10px] sm:text-xs">{labels[i]}</span>
               <span className="ml-0.5">{val}</span>
-              {i < 2 && <span className="text-muted-foreground/50 mx-1">·</span>}
+              {i < 2 && <span className="text-muted-foreground/50 mx-0.5 sm:mx-1">·</span>}
             </span>
           ))}
         </div>
-        <div className="h-4 w-px bg-border" />
+        <div className="h-3 sm:h-4 w-px bg-border" />
         <div className="flex items-center gap-1">
-          <span className="text-xs text-muted-foreground">Credits</span>
-          <span className="font-mono font-semibold">{C}</span>
+          <span className="text-[10px] sm:text-xs text-muted-foreground">Credits</span>
+          <span className="font-mono font-semibold text-foreground">{C}</span>
         </div>
       </div>
 
       {/* Visual bar */}
-      <div className="flex items-center gap-0.5 h-2">
+      <div className="flex items-center gap-0.5 h-1.5 sm:h-2">
         {[L, T, P].map((val, i) => (
           <div
             key={i}
             className="h-full bg-foreground/20 first:rounded-l last:rounded-r"
-            style={{ width: `${Math.max(val * 24, 4)}px` }}
+            style={{ width: `${Math.max(val * 16, 4)}px` }}
             title={`${fullLabels[i]}: ${val} hr/week`}
           />
         ))}
