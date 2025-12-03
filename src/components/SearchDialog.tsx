@@ -9,30 +9,28 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { getSubjects, getCurriculum, getSubjectTypeInfo, type Subject } from "@/lib/data";
+import { getCurriculum, getSubjectTypeInfo, type Subject } from "@/lib/data";
 import { Search } from "lucide-react";
 
 interface SearchDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   onSelectSubject: (type: string, code: string) => void;
+  subjects: Subject[];
 }
 
-export function SearchDialog({ open, onOpenChange, onSelectSubject }: SearchDialogProps) {
+export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: SearchDialogProps) {
   const [query, setQuery] = useState("");
-  const subjects = getSubjects();
 
-  // Reset query when dialog opens
   useEffect(() => {
     if (open) {
       setQuery("");
     }
   }, [open]);
 
-  // Filter subjects based on query
   const filteredSubjects = useMemo(() => {
     if (!query.trim()) {
-      return subjects.slice(0, 10); // Show first 10 when no query
+      return subjects.slice(0, 10);
     }
 
     const lowerQuery = query.toLowerCase();
@@ -99,6 +97,7 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject }: SearchDial
               filteredSubjects.map((subject) => {
                 const curriculum = getCurriculum(subject["SUBJECT CODE"]);
                 const typeInfo = getSubjectTypeInfo(subject["Type of Subject"]);
+                const isMinorOnly = subject["Minor-Only"] === "yes";
                 
                 return (
                   <button
@@ -118,9 +117,9 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject }: SearchDial
                           <span className="text-[9px] px-1.5 py-0.5 bg-muted rounded text-muted-foreground">
                             {typeInfo.name}
                           </span>
-                          {subject["Minor-Only"] === "yes" && (
-                            <span className="text-[9px] px-1.5 py-0.5 bg-muted rounded text-muted-foreground">
-                              Minor
+                          {isMinorOnly && (
+                            <span className="text-[9px] px-1.5 py-0.5 bg-purple-500/20 text-purple-400 rounded">
+                              M
                             </span>
                           )}
                         </div>
@@ -151,4 +150,3 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject }: SearchDial
     </Dialog>
   );
 }
-

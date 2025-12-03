@@ -122,8 +122,23 @@ export function getSubjectsByType(type: Subject["Type of Subject"]): Subject[] {
 }
 
 // Get subject type counts
-export function getSubjectTypeCounts(): Record<string, number> {
-  const subjects = getSubjects();
+export function getSubjectTypeCounts(includeMinorOnly: boolean = true): Record<string, number> {
+  let subjects = getSubjects();
+  if (!includeMinorOnly) {
+    subjects = subjects.filter(s => s["Minor-Only"] !== "yes");
+  }
+  return subjects.reduce(
+    (acc, s) => {
+      acc[s["Type of Subject"]] = (acc[s["Type of Subject"]] || 0) + 1;
+      return acc;
+    },
+    {} as Record<string, number>
+  );
+}
+
+// Get minor-only counts per type
+export function getMinorOnlyCounts(): Record<string, number> {
+  const subjects = getSubjects().filter(s => s["Minor-Only"] === "yes");
   return subjects.reduce(
     (acc, s) => {
       acc[s["Type of Subject"]] = (acc[s["Type of Subject"]] || 0) + 1;

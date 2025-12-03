@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SubjectTypeSelector } from "@/components/SubjectTypeSelector";
 import { SubjectSidebar } from "@/components/SubjectSidebar";
 import { CurriculumPanel } from "@/components/CurriculumPanel";
 import { SearchDialog } from "@/components/SearchDialog";
 import { Button } from "@/components/ui/button";
-import { getSubjectsByType, type Subject } from "@/lib/data";
+import { getSubjectsByType, getSubjects, type Subject } from "@/lib/data";
 import { ArrowLeft, Search } from "lucide-react";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [mobileShowPanel, setMobileShowPanel] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [withMinor, setWithMinor] = useState(false);
 
   // Keyboard shortcut for search (Cmd+K or Ctrl+K)
   useEffect(() => {
@@ -32,9 +33,19 @@ export default function Home() {
 
   useEffect(() => {
     if (selectedType) {
-      setSubjects(getSubjectsByType(selectedType as Subject["Type of Subject"]));
+      const allSubjects = getSubjectsByType(selectedType as Subject["Type of Subject"]);
+      const filtered = withMinor 
+        ? allSubjects 
+        : allSubjects.filter(s => s["Minor-Only"] !== "yes");
+      setSubjects(filtered);
     }
-  }, [selectedType]);
+  }, [selectedType, withMinor]);
+
+  // Filter subjects for search based on minor mode
+  const searchableSubjects = useMemo(() => {
+    const all = getSubjects();
+    return withMinor ? all : all.filter(s => s["Minor-Only"] !== "yes");
+  }, [withMinor]);
 
   const handleSelectType = (type: string) => {
     setSelectedType(type);
@@ -64,10 +75,29 @@ export default function Home() {
 
   const handleSearchSelect = useCallback((type: string, code: string) => {
     setSelectedType(type);
-    setSubjects(getSubjectsByType(type as Subject["Type of Subject"]));
+    const allSubjects = getSubjectsByType(type as Subject["Type of Subject"]);
+    const filtered = withMinor 
+      ? allSubjects 
+      : allSubjects.filter(s => s["Minor-Only"] !== "yes");
+    setSubjects(filtered);
     setSelectedCode(code);
     setMobileShowPanel(true);
-  }, []);
+  }, [withMinor]);
+
+  // Minor toggle component
+  const MinorToggle = () => (
+    <button
+      onClick={() => setWithMinor(!withMinor)}
+      className={`flex items-center gap-1.5 h-8 px-2.5 rounded-md text-xs transition-colors ${
+        withMinor 
+          ? "bg-purple-500/20 text-purple-400 border border-purple-500/30" 
+          : "bg-muted text-muted-foreground hover:bg-accent"
+      }`}
+    >
+      <span className={`w-2 h-2 rounded-full ${withMinor ? "bg-purple-400" : "bg-muted-foreground/50"}`} />
+      <span className="hidden sm:inline">Minor</span>
+    </button>
+  );
 
   // Browser view with sidebar and content
   if (selectedType) {
@@ -90,6 +120,7 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-1">
+            <MinorToggle />
             <Button
               variant="ghost"
               size="sm"
@@ -150,6 +181,7 @@ export default function Home() {
           open={searchOpen}
           onOpenChange={setSearchOpen}
           onSelectSubject={handleSearchSelect}
+          subjects={searchableSubjects}
         />
       </div>
     );
@@ -162,6 +194,7 @@ export default function Home() {
       <header className="h-12 border-b border-border flex items-center justify-between px-4 bg-background shrink-0">
         <span className="text-sm font-medium">CCE &apos;27</span>
         <div className="flex items-center gap-1">
+          <MinorToggle />
           <Button
             variant="ghost"
             size="sm"
@@ -209,10 +242,31 @@ export default function Home() {
             <kbd className="ml-4 px-2 py-0.5 bg-muted rounded text-[10px] text-muted-foreground">⌘K</kbd>
           </button>
 
+          {/* Minor Mode Hint */}
+          <div className="text-center">
+            <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border transition-colors ${
+              withMinor 
+                ? "bg-purple-500/10 border-purple-500/30 text-purple-400" 
+                : "bg-muted/50 border-border text-muted-foreground"
+            }`}>
+              <span className={`w-2 h-2 rounded-full ${withMinor ? "bg-purple-400" : "bg-muted-foreground/50"}`} />
+              <span className="text-xs">
+                {withMinor ? "Showing all subjects including Minor-only" : "Hiding Minor-only subjects"}
+              </span>
+              <button 
+                onClick={() => setWithMinor(!withMinor)}
+                className="text-xs underline underline-offset-2 hover:text-foreground"
+              >
+                {withMinor ? "Hide" : "Show"}
+              </button>
+            </div>
+          </div>
+
           {/* Category Cards */}
           <SubjectTypeSelector
             selectedType={selectedType}
             onSelectType={handleSelectType}
+            withMinor={withMinor}
           />
 
           {/* Legend */}
@@ -222,6 +276,7 @@ export default function Home() {
               <span>◐ Historical mapping</span>
               <span>◌ External only</span>
               <span>○ Limited info</span>
+              {withMinor && <span className="text-purple-400">M Minor-only</span>}
             </div>
           </div>
         </div>
@@ -236,6 +291,7 @@ export default function Home() {
         open={searchOpen}
         onOpenChange={setSearchOpen}
         onSelectSubject={handleSearchSelect}
+        subjects={searchableSubjects}
       />
     </div>
   );

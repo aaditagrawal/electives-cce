@@ -114,7 +114,7 @@ export function SubjectSidebar({
                       {indicator.symbol}
                     </span>
                     {subject["Minor-Only"] === "yes" && (
-                      <span className="text-[8px] sm:text-[9px] px-1 py-0.5 bg-muted rounded text-muted-foreground">
+                      <span className="text-[8px] sm:text-[9px] px-1 py-0.5 bg-purple-500/20 rounded text-purple-400">
                         M
                       </span>
                     )}
