@@ -1,0 +1,111 @@
+[
+    {
+      "new_code": "MAT 4408",
+      "old_code": "MAT 4055",
+      "title": "GAME THEORY AND STATISTICAL DECISIONS",
+      "credits": [3, 0, 0, 3],
+      "description": "Games and statistical games, statistical decision problem, decision function, risk function, prior and posterior distribution, Bayes risk and Bayes rules, least favourable prior, minimaxity, admissibility and complete classes, admissibility of Bayes rules, existence of minimal complete class and Bayes rules, the supporting and separating hyperplane theorems, essential completeness of the class of nonrandomized rules Two-person zero-sum games and non-zero-sum games, N-person games, strategies, mixed strategies, fair game, Two-person zero-sum games, N-person games, minimax and complete class theorems, solving for minimax rules, essential completeness of class of rules based on sufficient statistics, continuity of risk functions, invariant decision problems, admissible and minimax invariant decision rules. Applications",
+      "references": [
+        "Ferguson, T.S. Mathematical Statistics: A Decision Theoretic Approach. Academic Press (10 July 2014).",
+        "David A. Blackwell and M. A. Girshick. (1979). Theory of Games and Statistical Decisions. Dover Publications.",
+        "Thomas, L.C. (1993). Games, Theory and Applications. Dover Publications.",
+        "Straffin, P.D. (2017). Game Theory and Strategy. MAA Press."
+      ]
+    },
+    {
+      "new_code": "MAT 3232",
+      "old_code": "MAT 4056",
+      "title": "TIME SERIES ANALYSIS",
+      "credits": [3, 1, 0, 4],
+      "description": "Introduction to Time series - Trend, Seasonality, Cyclic and Irregular variations, Time series plots, Method of semi averages, Method of Curve fitting by the principles of least squares, Conversion of Trend equation, Ratio to trend method, Ratio to moving average method, Method of link relatives. Measurement of cyclical variations, Measurement of irregular variation. Introduction to Univariate time series modelling and forecasting: Time series as a discrete parameter stochastic process (A strictly stationary process, A weakly stationary process, A white noise process),Moving average processes, Autoregressive processes, the partial autocorrelation function, ARMA & ARIMA processes, Box–Jenkins approach, Exponential smoothing, in-sample and out-of-sample forecasts, Forecasting with time series versus structural models, Determining whether a forecast is accurate or not. Introduction to Multivariate time series modelling and forecasting:Vector autoregressive models - VAR with contemporaneous terms- Block significance and causality tests - VARs with exogenous variables - Impulse responses and variance decompositions - Forecasting with VARs. Modelling long-run relationships: Stationarity and unit root testing – Cointegration - Equilibrium correction or error correction models (Engle and Granger, 1987) - Testing for and estimating cointegrating systems using the Johansen technique based on VARs. Introduction to Financial Time Series: Basic concepts of financial markets and financial systems, Financial time series and their characteristics: Assets and Markets, Asset Returns, Distribution of returns, Basic difference between Time Series and Financial Time Series, Modelling with Financial Time Series Data (stationarity checking, cointegration, error correction model, causality etc.). Modelling volatility and correlation: Volatility modelling, Introduction to Conditional Heteroscedastic models: ARCH and GARCH Models, Properties of ARCH and GARCH models, Limitations, Order determination and model building.",
+      "references": [
+        "Spyros Makridakis, Steven C Wheelwright, Rob J Hyndman, Forecasting Methods and Applications, 3rd Edition, John Wiley & Sons Publication, 2005, ISBN: 978-81-265-1852-",
+        "Walter Enders, Applied Econometric Time Series, 3rd Edition, John Wiley & Sons Publication, 2015 ISBN: 978-81-265-4391-5.",
+        "Gujarati, N.D., Basic Econometrics, Fifth Edition, McGraw Hill, 2012 ISBN: 978-0-07-133345-0",
+        "G.S. Maddala, Introduction to Econometrics, Third Edition, John Wiley & Sons Publication, 2005, ISBN: 978-81-265-1095-5",
+        "Montgomery D C, Jennings C L, Kulahci M. Introduction to time series analysis and forecasting. John Wiley & Sons; 2015.",
+        "Brockwell P J, Davis R A. Introduction to time series and forecasting. Springer; 2016.",
+        "Box G E, Jenkins G M, Reinsel G C, Ljung G M. Time series analysis: forecasting and control. John Wiley & Sons; 2015."
+      ]
+    },
+    {
+      "new_code": "PHY 4401",
+      "old_code": "PHY 4311",
+      "title": "FUNDAMENTALS OF ASTRONOMY & ASTROPHYSICS",
+      "credits": [3, 0, 0, 3],
+      "description": "Introduction to astronomy and astrophysics. Properties of ordinary stars: Brightness of starlight; the electromagnetic spectrum; Colours of stars; stellar distances; absolute magnitudes; HR diagram. Stellar evolution: Formation of star; the main sequence; stellar structure; evolution off the main sequence; planetary nebulae; white dwarfs. Relativity: Special relativity; Time dilation; Length contraction; Doppler shift; Space-time. General Relativity: Curved space – time; principle of equivalence; bending electromagnetic radiation; Black holes- The Schwarzschild radius. The death of high mass stars: Supernovae; neutron stars; pulsars; stellar black holes. Normal Galaxies: Types of galaxies; Dark matter in galaxies. Cosmology: The scale of universe; expansion of the universe; open or closed universe; the big bang; the cosmic background radiation; big bang nucleosynthesis. Astronomical instruments.",
+      "references": [
+        "Marc L Kutner, Astronomy: A physical Perspective, Cambridge University Press,2003",
+        "Baidyanath Basu, An Introduction to Astrophysics, II Edn, PHI Learning Pvt. Ltd, 2011.",
+        "Michael Zeilik, Introductory Astronomy and Astrophysics, 4th edition, Saunders College Pub. 1992."
+      ]
+    },
+    {
+      "new_code": "PHY 4402",
+      "old_code": "PHY 4311",
+      "title": "FUNDAMENTALS OF ASTRONOMY & ASTROPHYSICS",
+      "credits": [3, 0, 0, 3],
+      "description": "Introduction to astronomy and astrophysics. Properties of ordinary stars: Brightness of starlight; the electromagnetic spectrum; Colours of stars; stellar distances; absolute magnitudes; HR diagram. Stellar evolution: Formation of star; the main sequence; stellar structure; evolution off the main sequence; planetary nebulae; white dwarfs. Relativity: Special relativity; Time dilation; Length contraction; Doppler shift; Space-time. General Relativity: Curved space – time; principle of equivalence; bending electromagnetic radiation; Black holes- The Schwarzschild radius. The death of high mass stars: Supernovae; neutron stars; pulsars; stellar black holes. Normal Galaxies: Types of galaxies; Dark matter in galaxies. Cosmology: The scale of universe; expansion of the universe; open or closed universe; the big bang; the cosmic background radiation; big bang nucleosynthesis. Astronomical instruments.",
+      "references": [
+        "Marc L Kutner, Astronomy: A physical Perspective, Cambridge University Press,2003",
+        "Baidyanath Basu, An Introduction to Astrophysics, II Edn, PHI Learning Pvt. Ltd, 2011.",
+        "Michael Zeilik, Introductory Astronomy and Astrophysics, 4th edition, Saunders College Pub. 1992."
+      ]
+    },
+    {
+      "new_code": "MAT 5306",
+      "old_code": null,
+      "title": "MATHEMATICS FOR FINANCE + RELIABILITY THEORY",
+      "credits": [3, 0, 0, 3],
+      "note": "This single new code maps to two old courses: MAT 4453 and MAT 4455",
+      "subjects": [
+        {
+          "title": "MATHEMATICS FOR FINANCE",
+          "description": "Introduction to Stochastic Processes, Poisson Process, Brownian Motion, Martingales Present Value Analysis, Interest rate analysis, Market Model Specification problems. Arbitrage Theorem, Multi-period binomial Model, Block-Scholes formula. Valuing investments by expected utility, Portfolio selection problem, Capital Assets Pricing model, Rates of return, Single period and geometric Brownian motion, Mean-variance analysis of risk - neutral-priced call options, Autoregressive models and mean regression, Other pricing options and applications.",
+          "references": [
+            "S. M. Ross, \"An Introduction to Mathematical Finance\", Cambridge University Press, 1999",
+            "Prakash A J, R.M.Bear, K.Dandapani, G.L.G.T.E.Pactwa and A.M.Parchigari, \"The return Generating Models in Global Finance\", Pergamon Press, 1998",
+            "S. M. Ross, \"Applied Probability models with Optimization Applications\", Holdenday, 1980."
+          ]
+        },
+        {
+          "title": "RELIABILITY THEORY",
+          "description": "Static probabilities: review and prerequisites generating functions, difference equations. Dynamic probability: definition and description with examples. Markov chains, transition probabilities, Chapman-Kolmogorov equations. Classification of states, chains of Markov process. Stability of Markov systems, limiting behaviour, random walk. Poisson Processes: assumptions and derivations, related distributions, birth and death processes. Queueing System, general concepts, Model M/M/1 and M/M/S, steady state behaviour, transient behaviour. Wiener processes and Gaussian processes. Differential equations of a Wiener process, Kolmogorov equations, Ornstein–Uhlenbeck Process. White noise. Reliability Theory: Definition of Reliability, types of failure, Hazard rate, Laws of failure - normal, exponential & Weibull failure laws - System reliability - in series, in parallel series - parallel system, Parallel - series system & related problems.",
+          "references": [
+            "Medhi. J. Stochastic Processes, Wiley Eastern.",
+            "Bhat U R, Elements of Applied Stochastic Processes, John Wiley.",
+            "Srinivasan and Mehata, Stochastic Processes, Tata McGraw Hill.",
+            "A Papoulis, Probability, Random Variables and Stochastic Processes, McGraw Hill.",
+            "Shane and Hoel, \"Fundamentals of Systems Engineering\""
+          ]
+        }
+      ]
+    },
+    {
+      "new_code": "MAT 4453",
+      "old_code": "MAT 5306",
+      "title": "MATHEMATICS FOR FINANCE",
+      "credits": [3, 0, 0, 3],
+      "description": "Introduction to Stochastic Processes, Poisson Process, Brownian Motion, Martingales Present Value Analysis, Interest rate analysis, Market Model Specification problems. Arbitrage Theorem, Multi-period binomial Model, Block-Scholes formula. Valuing investments by expected utility, Portfolio selection problem, Capital Assets Pricing model, Rates of return, Single period and geometric Brownian motion, Mean-variance analysis of risk - neutral-priced call options, Autoregressive models and mean regression, Other pricing options and applications.",
+      "references": [
+        "S. M. Ross, \"An Introduction to Mathematical Finance\", Cambridge University Press, 1999",
+        "Prakash A J, R.M.Bear, K.Dandapani, G.L.G.T.E.Pactwa and A.M.Parchigari, \"The return Generating Models in Global Finance\", Pergamon Press, 1998",
+        "S. M. Ross, \"Applied Probability models with Optimization Applications\", Holdenday, 1980."
+      ]
+    },
+    {
+      "new_code": "MAT 4455",
+      "old_code": "MAT 5306",
+      "title": "RELIABILITY THEORY",
+      "credits": [3, 0, 0, 3],
+      "description": "Static probabilities: review and prerequisites generating functions, difference equations. Dynamic probability: definition and description with examples. Markov chains, transition probabilities, Chapman-Kolmogorov equations. Classification of states, chains of Markov process. Stability of Markov systems, limiting behaviour, random walk. Poisson Processes: assumptions and derivations, related distributions, birth and death processes. Queueing System, general concepts, Model M/M/1 and M/M/S, steady state behaviour, transient behaviour. Wiener processes and Gaussian processes. Differential equations of a Wiener process, Kolmogorov equations, Ornstein–Uhlenbeck Process. White noise. Reliability Theory: Definition of Reliability, types of failure, Hazard rate, Laws of failure - normal, exponential & Weibull failure laws - System reliability - in series, in parallel series - parallel system, Parallel - series system & related problems.",
+      "references": [
+        "Medhi. J. Stochastic Processes, Wiley Eastern.",
+        "Bhat U R, Elements of Applied Stochastic Processes, John Wiley.",
+        "Srinivasan and Mehata, Stochastic Processes, Tata McGraw Hill.",
+        "A Papoulis, Probability, Random Variables and Stochastic Processes, McGraw Hill.",
+        "Shane and Hoel, \"Fundamentals of Systems Engineering\""
+      ]
+    }
+  ]
+  

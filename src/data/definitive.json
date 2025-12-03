@@ -1,0 +1,468 @@
+[
+  {
+    "code": "ICT 4401",
+    "title": "ARTIFICIAL INTELLIGENCE",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction; Searching State Space; Multiagent Search; Propositional Logic; First-Order Logic: Basics of FoL, Expert systems with FoL, Systematic inference procedures; Knowledge Representation: Ontological engineering, Reasoning systems for categories; Quantifying Uncertainty: Acting under uncertainty, Inference with full joint distributions; Probabilistic Reasoning: Knowledge representation in uncertain domain, Bayesian networks; Making Simple Decisions: Combining beliefs and desires under uncertainty, Decision-theoretic expert functions",
+    "references": [
+      "Charu C Agarwal, Artificial Intelligence, Springer, 2021",
+      "Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach (3e), Pearson 2015.",
+      "Wolfgang Ertel, Introduction to Artificial Intelligence (2e), Springer, 2018"
+    ]
+  },
+  {
+    "code": "ICT 4412",
+    "title": "SEMANTIC WEB",
+    "credits": [3, 0, 0, 3],
+    "description": "The Semantic Web Activity of W3C: Overview of techniques and standards, XML with Document Type Definitions and Schemas; Describing Web Resource: RDF data models, syntax, semantics, schema, RDFS, RDF Data structures, Containers and collections; Querying Semantic Web: SPARQL matching patterns, filters, querying schemas; Ontology and Information Systems: Use of ontologies, types, design principles, methodologies; Ontology Languages: OWL2, OWL2 profiles; Logic for the Semantic Web: Predicate and Description Logics; Ontology Reasoning: Monotonic rules, Rule interchange format, Semantic web rules languages, RuleML; Ontology Design and Management: Types, purposes, creating ontology manually, reusing existing, mapping",
+    "references": [
+      "Grigoris Antoniou, Paul Groth, Frank van Harmelen, Rinke Hoekstra, A Semantic Web Primer, 3rd edition, The MIT Press, 2012.",
+      "Peter Szeredi, Gergely Lukacsy, Tamas Benko, and Zsolt Nagy, The Semantic Web Explained, Cambridge University Press, 2014",
+      "Liyang Yu, Introduction to the Semantic Web and Semantic Web Services, CRC Press, 2019",
+      "Elisa F.Kendall, Deborah L.McGuinness, Ying Ding, and Paul Groth, Ontology Engineering, Morgan & Claypool Publishers, 2019."
+    ]
+  },
+  {
+    "code": "ICT 4416",
+    "title": "ARTIFICIAL INTELLIGENCE IN CYBER SECURITY",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Role of ML and AI in Security: Rules-Based, Signature-Based, and Firewall Solutions Focusing on the Threat of Malicious Bots, Network Anomaly Detection with AI: Intrusion Detection Systems, Host Intrusion Detection Systems, Network Intrusion Detection Systems, Anomaly-driven IDS, Web Applications Security using AI and ML, Privacy Issues, Case Studies, AI, ML and Managed Security Service Providers",
+    "references": [
+      "Laurent Gil and Allan Liska Security With AI And Machine Learning,1st Edition, O'Reilly Media, 2019.",
+      "Alessandro Parisi, Hands–On Artificial Intelligence for Cybersecurity, 1st Edition, Packt Publishing, 2019.",
+      "Nina Godbole and Sunit Belpure, Cyber Security Understanding Cyber Crimes, Computer Forensics and Legal Perspectives, 1st Edition, Wiley, 2011.",
+      "B. B. Gupta, D. P. Agrawal, Haoxiang Wang, Computer and Cyber Security: Principles, Algorithm, Applications, and Perspectives, 1st Edition, CRC Press, 2018.",
+      "Ishaani Priyadarshini, Rohit Sharma Artificial Intelligence and Cybersecurity Advances and Innovations, 1st Edition, CRC Press, 2022.",
+      "Soma Halder, Sinan Ozdemir Hands-On Machine Learning for Cybersecurity: Safeguard your system by making your machines intelligent using the Python ecosystem,1st Edition, Packt Publishing, 2018."
+    ]
+  },
+  {
+    "code": "CRA 4401",
+    "title": "MARKETING DIGITAL",
+    "credits": [3, 0, 0, 3],
+    "url": "https://www.coursera.org/learn/marketing-digital",
+    "description": "Coursera Course - Visit the link to find out the exact curriculum. ",
+    "references": []
+  },
+  {
+    "code": "CRA 4405",
+    "title": "BIG DATA MANAGEMENT",
+    "credits": [3, 0, 0, 3],
+    "url": "https://www.coursera.org/learn/big-data-management",
+    "description": "Coursera Course - Visit the link to find out the exact curriculum. ",
+    "references": []
+  },
+  {
+    "code": "AAE 4405",
+    "title": "UNMANNED AIRCRAFT SYSTEM, SENSORS, AND INSTRUMENTATION",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction to Unmanned Aircraft Systems (UAS) and Applications of UAS, Introduction to Design and Selection of the System, Aerodynamics and Airframe Configurations, Characteristics of Aircraft Types, Design Standards, Design for Stealth, PAYLOADS, Communications, Control and Stability, Navigation, Launch and Recovery, Control Stations, Support Equipment, Transportation, Design for Reliability, EMC/EMI of UAS. Introduction to System Development and Certification, System Development, UAV System testing, system-in flight testing, Defence Application.",
+    "references": [
+      "Reg Austin: Unmanned Aircraft Systems UAVs Design, Development and Deployment, A John Wiley and Sons, Ltd., (2010).",
+      "Jay Gundlach: Designing Unmanned Aircraft Systems: A Comprehensive Approach, AIAA Education Series, (2014).",
+      "Jay Gundlach: Civil and Commercial Unmanned Aircraft Systems, AIAA Education Series, (2016).",
+      "Dr David C. Ison: Small Unmanned Aircraft Systems Guide: Exploring Designs, Operations, Regulations, and Economics, Aviation Supplies & Academics Inc, (2017).",
+      "Douglas M. Marshall et al.: Introduction to Unmanned Aircraft Systems, Taylor & Francis, (2016).",
+      "F.B. da Silva S.D. Scott M.L. Cummings: Design Methodology for Unmanned Aerial Vehicle (UAV) Team Coordination, MIT Department of Aeronautics and Astronautics, Cambridge, MA 0213, (2007)."
+    ]
+  },
+  {
+    "code": "ECE 4403",
+    "title": "PHOTONIC COMMUNICATION SYSTEM",
+    "credits": [3, 0, 0, 3],
+    "description": "Light propagation in multimode and single mode fibers, optical impairments, Optoelectronic Devices, Semiconductor Detectors, Photonic Devices and circuits, Light wave Systems, Optical Signal Processing, Optical Networks Photonic Communication System Design *Self-directed Learning: Optical Networks",
+    "references": [
+      "B. E. A. Saleh and M. C. Teich, “Fundamentals of Photonics”, Wiley-India, 2007",
+      "*J. M. Senior, “Optical Fiber Communication-principles and practice”, Prentice hall of India, 3rd Edition, 2009.",
+      "Gerd Keiser, Optical Fiber Communications, TMH publication, 5th edition, 2017.",
+      "Govind P. Agrawal - Fiber-optic communication systems - Wiley et Sons, 4th edition,2010",
+      "R. Ramaswami and K. Sivarajan, Optical Networks: A Practical Perspective, Morgan Kaufmann, 2nd Edition, Elsevier, 2001."
+    ]
+  },
+  {
+    "code": "HUM 4421",
+    "title": "UNDERSTANDING LITERATURE",
+    "credits": [3, 0, 0, 3],
+    "description": "Evolution and Development of literary forms: Poetry, Drama, Fiction. Major themes; allegory, satire, romanticism, realism, modernism and post modernism. Major writers and their contribution. Genre and canon; Socio-political conditions of the society; Literary Transactions; Literary Movements; Contemporary concerns and representations in Poetry, Drama and fiction; Reception and Literary Criticism: major contributions and relevance",
+    "references": [
+      "Jahn, Manfred. Poems, Plays, and Prose: A Guide to the Theory of Literary Genres, 2002",
+      "Frye, Northrop. Anatomy of criticism: Four essays. Princeton University Press, 2020",
+      "Jenkinson, Edward B.(eds.) On Teaching Literature London: Indiana University Press, 2010.",
+      "Mayhead, R. Understanding Literature Cambridge: CUP, 2016",
+      "Styan, J.L. The Elements of Drama Cambridge: CUP, 2016",
+      "Auerbach, Erich, and Edward W. Said. Mimesis: The Representation of Reality in Western Literature - New and Expanded Edition. Vol. 78. Princeton University Press, 2013."
+    ]
+  },
+  {
+    "code": "HUM 4411",
+    "title": "ENTREPRENEURSHIP",
+    "credits": [3, 0, 0, 3],
+    "description": "The Entrepreneurial mind-set, Startup eco-system, Corporate entrepreneurship, Generating and exploiting new entries, Creativity and the business idea, Identifying and analysing opportunities (domestic and international), Protecting the idea and other legal issues for the entrepreneur, Business plan, Marketing plan, Organizational plan, Financial plan, Sources of capital, Informal risk capital, Venture capital, Going public, Strategies for growth, Managing the implications of growth, Accessing resources for growth from external sources, Succession planning.",
+    "references": [
+      "Hisrich, R D., Peters, M P, Shepard D A, and Sinha. S. Entreprenuership, 11e.McGraw-Hill Special Indian Edition, New Delhi, India, 2020.",
+      "Neck, Heidi M., Christopher P. Neck, and Emma L. Murray. Entrepreneurship: the practice and mindset, 2e. Sage Publications, New Delhi, India, 2019.",
+      "Norman Scarborough &Jeffrey Cornwall. Essentials of Entrepreneurship and Small Business Management, 9e. Pearson, Noida, India, 2019."
+    ]
+  },
+  {
+    "code": "HUM 4401",
+    "title": "HUMAN RESOURCE MANAGEMENT",
+    "credits": [3, 0, 0, 3],
+    "description": "Evolution, Significance, Strategic HRM, HR practices-planning, recruitment, selection, placement and induction, Training & Development, Performance evaluation, Compensation management. HR for Entrepreneurs, inclusive practices, International HRM, strategic HRM, Discipline & Grievances, HR in digital world.",
+    "references": [
+      "Pareek, U., & Rao, T. V. (2015). Designing and managing human resource systems. Oxford and IBH publishing.",
+      "Dessler, G., (2017), “Human Resource Management”, Pearson publications",
+      "Aswathappa, K. E. M. A. L. (2013). Human resource management: Text and cases. Tata McGraw-Hill Education."
+    ]
+  },
+  {
+    "code": "ICT 4402",
+    "title": "MACHINE LEARNING",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction to Machine Learning, Mathematical Preliminaries, Supervised Learning-LMS, logistic regression, GDA, Naive Bayes, SVM, model selection, Learning theory-bias/variance tradeoff, union and Chernoff bounds, VC dimensions, Unsupervised learning-clustering, k-means, Gaussian mixture, factor analysis, PCA, ICA, Reinforcement learning-MDPs, Bellman equations, value and policy iteration, LQR, LQG, Q-learning, policy search, POMDPs, Explainability.",
+    "references": [
+      "Kevin P Murphy, Machine Learning: A Probabilistic Perspective, MIT Press, 2012.",
+      "Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar., Foundations of Machine Learning, MIT Press, 2012.",
+      "Daphne Koller and Nir Friedman, Probabilistic Graphical Models: Principles and Techniques, MIT Press, 2009.",
+      "Christopher M.Bishop., Pattern Recognition and Machine Learning (2e), Springer, 2013.",
+      "Richard S.Sutton and Andrew G.Barto, Reinforcement Learning, 2nd Edition, MIT Press, 2018",
+      "Solon Barocas, Moritz Hardt and Arvind Narayanan, Fairness and Machine Learning, failml.org, 2021"
+    ]
+  },
+  {
+    "code": "ICT 4414",
+    "title": "ETHICAL HACKING",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Types, Terminologies and Laws, Footprinting, Social Engineering, Malware and Virus, Vulnerability Assessment, DDOS attacks, SQL injection, Sniffing and System Hijacking, Session Hijacking, Scanning and Enumeration, Web Servers attacks, Pentesting Report, Tools for each of attacks and Countermeasures.",
+    "references": [
+      "Ric Messier, Certified Ethical Hacker Version 10- Study Guide,10th edition, Sybex Wiely, 2019.",
+      "Corey P. Schultz, Bob Percianccante, Kali Linux Cook Book, 2nd edition, Packt Publishing, 2017.",
+      "Phillip L. Wylie, Kim Crawley, The Pentester Blue Print, 1st edition,Wiley,2020.",
+      "Christopher Hadnagy, Social Engineering: The Art of Human Hacking,1st edition, Wiley, 2020.",
+      "James Corley, Kent Backman, Michael Simpson., Hands on Ethical hacking and network Defense 2nd edition, Delmar Cengage Learning; 2010.",
+      "John Erickson, Hacking: The art of exploitation, 2nd edition, No Starch Press,2008.",
+      "Patrick Engebretson, The Basics of Hacking and Penetration Testing: Ethical Hacking and Penetration Testing Made Easy,1st edition, Syngress Media, U.S.,2010."
+    ]
+  },
+  {
+    "code": "AAE 4406",
+    "title": "ANTENNA DESIGN ANALYSIS AND ITS APPLICATIONS",
+    "credits": [3, 0, 0, 3],
+    "description": "Fundamentals of electromagnetic theory. Boundary value problem, Magnetostatic Field, maxwell equations, Fundamentals of Antenna, Basic Antenna and Propagation Theory: Introduction, Characteristics of Electromagnetic Waves, Interaction between Two Wave Polarizations. Characteristics of an Antenna. Propagation. Antennas and Applications. Antennas Placement/Used on Aircraft, Polar Radiation Patterns., Computer Modelling Techniques, Method of Moments, FDTD, UTD, Physical Optics, Hybrid Methods, Radar Cross Section (RCS), RCS Dependency on Polarization, Stealth technology and radar absorbing materials (RAM).",
+    "references": [
+      "Mathew N O Sadiku: Elements of Electromagnetics, Oxford University Press, (2001).",
+      "C.A. Balanis: Antenna Theory - Analysis and Design, John Wiley, (2016).",
+      "Thereza Macnamara: Introduction to Antenna Placement and Installation, Wiley, (2010).",
+      "John D Kraus, Ronald J Marhefka, Ahmad S Khan: Antennas for All Applications, The McGraw Hill Companies, (2008).",
+      "J. E. Rhodes: Antenna Handbook, Department of The Navy, (2016).",
+      "Lo, Y.T., Lee, S. W.: Antenna Handbook Theory, Applications, and Design, Springer US, (1988)."
+    ]
+  },
+  {
+    "code": "ECE 4401",
+    "title": "MACHINE LEARNING FOR COMMUNICATION SYSTEM",
+    "credits": [3, 0, 0, 3],
+    "description": "Linking machine learning and communication systems. Overview of supervised, unsupervised and reinforcement learning. Communication Systems: use of machine learning in OSI layer. Connection between signal processing, adaptive filtering and machine learning. Self-organizing wireless networks, Cognitive radio and machine learning. Neural networks, network training, use of gradient information, gradient descent optimization; error back propagation, Bayesian neural networks, Support vector machines. ML and DL for communication system. *Self-directed Learning: Classification of learning",
+    "references": [
+      "Christopher Bishop, “Pattern Recognition and Machine Learning”, First Edition, Springer, 2016.",
+      "Krishna Kant Singh, Akansha Singh, KorhanCengiz, Dac-Nhuong Le, “Machine Learning a n d C o g n i t i v e C o m p u t i n g f o r M o b i l e Communications and Wireless Networks”, Wiley, 2 020.",
+      "Yoshua Bengio, “Learning Deep Architectures for AI, Foundations and Trends in Machine Learning”, First Edition, Now Publishers Inc, 2009.",
+      "https://www.youtube.com/watch?v=EWmCkVfPnJ8"
+    ]
+  },
+  {
+    "code": "ICT 4409",
+    "title": "INFORMATION RETRIEVAL",
+    "credits": [3, 0, 0, 3],
+    "description": "Boolean Retrieval Model, Index Construction: Blocked sort based indexing, Single Pass in memory indexing, Distributed indexing, Dynamic Indexing, Index Compression: Dictionary compression, postings compression, Vector Space Model, Parameter and zone indexes, Evaluation in IR, Result snippets, Relevance Feedback and Query Expansion, Latent Semantic Indexing, Web Search Basics, Near duplicates and shingling, Web Crawling and Indexes, Distributing indexes, Link Analysis, Page Rank.",
+    "references": [
+      "Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze, Introduction to Information Retrieval, Cambridge University Press, 2008.",
+      "Stefan Buettcher, Charles L. A. Clarke and Gordon V. Cormack, Information Retrieval: Implementing and Evaluating Search Engines, MIT Press, 2016.",
+      "David A. Grossman and Ophir Frieder, Information Retrieval: Algorithms and Heuristics, Springer, 2004."
+    ]
+  },
+  {
+    "code": "HUM 4424",
+    "title": "MODERN INDIAN LITERATURE",
+    "credits": [3, 0, 0, 3],
+    "description": "Beginning of Indian Writing in English. The Gandhian Influence; Partition and Independence; early Indian Novel in English; The Growth of Indian Theatre in English: Indainaisation and Western influence in Drama. Poetry: Early Poetry-Toru Dutt, Sarojini Naidu, Kamala Das, Amrita Pritam, Jayanta Mahapatra,; Development in poetic trends: A K Ramanujam, Gauri Deshpande, R Partha Sarathi Nissim Ezekeil, Keki Daruwalla, Arvind Kolatkar. Fiction in Indian writing: R K Narayan, Amitav Ghosh, Arundati Roy; Rohinton Mistry, Salman Rushdhi, and JumpaLahri.",
+    "references": [
+      "Appudurai, Arjun, Appadurai, Arjun. Modernity at Large: Cultural Dimensions of Globalization. University of Minnesota Press, Minneapolis, 2005.",
+      "Deshmane, Chetan, ed. Muses India: Essays on English-LanguageWriters from Mahomet to Rushdie. Jefferson, NC, and London: McFarland & Co., 2013.",
+      "Mukherjee, Meenakshi. The Twice Born Fiction. Pencraft, New Delhi, 2001.",
+      "Iyengar, Srinivasa K.R.: Indian Writing in English. Sterling Publishers Private Limited. Reprint 1994.",
+      "Naik, M.K. A History of Indian English Literature. Sahitya Academy, 1982, reprint."
+    ]
+  },
+  {
+    "code": "HUM 4402",
+    "title": "MARKETING MANAGEMENT",
+    "credits": [3, 0, 0, 3],
+    "description": "Marketing definition, scope and concepts, Adapting marketing to the New Economy, Marketing strategic planning. Market Demand, Marketing Environment, Marketing Information System, Marketing Research. Segmentation, Targeting and Positioning, Buying Behaviour: Consumer Markets and Business Markets, Competition: Identifying competitors, analysing competitors. Product Life Cycle: Product life-cycle marketing strategies. New Market Offerings: New product development and challenges, Branding. Designing and Managing Services, Price Strategies, Retailing, Wholesaling, Integrated Marketing Communications, Digital Marketing and Trends, International Marketing.",
+    "references": [
+      "Philip Kotler, Kevil Keller, SweeAng, Chi Tan, Siew Leong, Marketing Management- An Asian Perspective, Pearson Education, Singapore, 2021.",
+      "Philip Kotler, Kevil Keller, Abraham Koshy &MithileshwarJha, Marketing Management: A South Asian Perspective, Pearson Education Inc, New Delhi, 2012.",
+      "Deepak &Jeyakumar, Marketing Management. Educreation Publishing, 2019."
+    ]
+  },
+  {
+    "code": "CRA 4402",
+    "title": "DIGITAL ANALYTICS",
+    "credits": [3, 0, 0, 3],
+    "url": "https://www.coursera.org/learn/digital-analytics",
+    "description": "Coursera Course - Visit the link to find out the exact curriculum. ",
+    "references": []
+  },
+  {
+    "code": "CRA 4406",
+    "title": "BIG DATA INTEGRATION PROCESSING",
+    "credits": [3, 0, 0, 3],
+    "url": "https://www.coursera.org/learn/big-data-integration-processing",
+    "description": "Coursera Course - Visit the link to find out the exact curriculum. ",
+    "references": []
+  },
+  {
+    "code": "ICT 3230",
+    "title": "FULL STACK WEB DEVELOPMENT TOOLS",
+    "credits": [3, 0, 0, 3],
+    "description": "Front-End Web UI frameworks and Tools: Bootstrap 4, CSS and JavaScript component, Node.js, NPM and task runners, Front-End Web Development with React: JavaScript ES6, Reactstrap for Bootstrap 4-based responsive UI design, react router, Flux architecture, redux, REST API, Front-End JavaScript Framework with Angular: Typescript, Angular material, Flex-layout for responsive design, components, Data binding, Angular router, Angular animation support and Angular testing, Server-side development with NodeJS, Express and MongoDB.",
+    "references": [
+      "Shama Hoque, Full-Stack React Projects: Modern web development using React 16, Node, Express, and MongoDB, Ingram Publishers, 2018",
+      "Chris Northwood, The Full Stack Developer: Your Essential Guide to the Everyday Skills Expected of a Modern Full Stack Web Developer, 1st Edition, 2018",
+      "Frank Zammetti, Modern Full-Stack Development: Using Type Script, React, Node.js, Webpack, and Docker, 1st Edition, 2020."
+    ]
+  },
+  {
+    "code": "ICT 3228",
+    "title": "CLOUD TECHNOLOGIES",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction: Cloud computing delivery models and services, Challenges, Cloud Infrastructure: Amazon, Google, Microsoft Azure, Open Source Platforms, Services in Cloud: Service Oriented Architecture, REST, Cloud resource virtualization: Types of virtualization, Understanding hypervisors, Virtual Machines, Dockers Containers, Virtualization at Compute, Storage and Network level, Resource Management and Scheduling: Policies and Mechanisms, Scheduling, Business Continuity and Cloud management: Fault Tolerance, Replication Methods, Cloud Security: Virtual machine security, Access control and identity management, Cloud Tools: Eucalyptus, OpenNebula/OpenStack, CloudSim",
+    "references": [
+      "Dan C Marinescu, Cloud Computing Theory and Practice, 2nd Edition, 2017",
+      "Rajkumar Buyya, Christian Vecchiola, S. Thamarai Selvi, Mastering Cloud Computing, 2nd Edition, McGraw Hill 2017",
+      "Sehgal, Naresh Kumar, and Pramod Chandra P. Bhatt, Cloud Computing: Concepts and Practices, 1st Edition, Springer, 2018",
+      "Barrie Sosinsky, Cloud Computing Bible, 1st Edition, Wiley Publishing Inc., 2011.",
+      "Anthony T. Velte, Toby J. Velte, Robert Elsenpeter, Cloud Computing: A Practical Approach, 1st Edition, McGraw Hill 2017",
+      "Mark C Chu-Carroll, Code in the Cloud, 1st Edition, Pragmatic Bookshelf, 2011."
+    ]
+  },
+  {
+    "code": "ICT 3229",
+    "title": "DATA MINING AND PREDICTIVE ANALYTICS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction to Data mining, Data objects and attribute types, Data visualization, Data cleaning, Data integration, Data reduction, Data transformation strategies, Association rule mining, Cluster analysis, Partitioning methods, K-means, K-Medoid, Hierarchical methods, Density-Based methods, Classification techniques, Model evaluation and selection, Regression techniques, Introduction to web mining, temporal and spatial data mining.",
+    "references": [
+      "Jiawei Han, Micheline Kamber, Jian Pei, Data Mining Concepts and Techniques, 3rd edition, Morgan Kauffmann Publishers 2012",
+      "Arun K Pujari., Data Mining Techniques, 4th edition, Orient Black Swan/Universities Press 2016.",
+      "Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, Vipin Kumar, Introduction to Data Mining, Pearson Education, 2nd edition, Pearson 2018.",
+      "John D. Kelleher, Brian Mac Namee, Aoife D' Arcy, Fundamentals of Machine Learning for predictive Data Analytics: Algorithms, Worked Examples and Case Studies, 1st edition, MIT Press 2015."
+    ]
+  },
+  {
+    "code": "MTE 4315",
+    "title": "INTRODUCTION TO INDUSTRIAL ROBOTICS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction: definition of robots, anatomy, degrees of freedom, Robot configuration, control parameters, actuators and sensors. Spatial Descriptions and Transformations: Frame representation and mapping, operators. Industrial Manipulator Kinematics:link description, forward kinematics of industrial robots, Inverse kinematics of standard industrial manipulators. Industrial Manipulator Dynamics: Jacobian and force vector.Forward dynamics and inverse dynamic simulations in Robo Analyzer software, Robotics Application: Image processing: colour detection through Open CV programming. Arduino programming for servo and DC motor control. Socio-economic and Safety Aspect of Industrial Robots: Social and labor issues impact. Economic analysis. Safety, training, maintenance and quality improvement, Robotics technology of the future.",
+    "references": [
+      "John J. Craig, Introduction to Robotics: Mechanics and Control, (3e), PHI, 2005.",
+      "C. Peter. Robotics, Vision and Control: Fundamental Algorithms in MATLAB. Vol. 73. Springer, 2011.",
+      "G. Ashitava, Robotics: Fundamental Concepts and Analysis, Oxford University Press, 2006.",
+      "Murray, Richard M., Zexiang Li, S. Shankar Sastry, and S. Shankara Sastry, A Mathematical Introduction to Robotic Manipulation, CRC press, 1994.",
+      "Siciliano, Bruno, and Oussama Khatib. \"Robotics and the Handbook.\" Springer Handbook of Robotics. Springer, Cham, 2016.",
+      "Groover, Mikell P., Mitchell Weiss, and Roger N. Nagel. Industrial robotics: technology, programming and application. McGraw-Hill"
+    ]
+  },
+  {
+    "code": "ELE 4312",
+    "title": "ESSENTIALS OF ENERGY AUDITING",
+    "credits": [3, 0, 0, 3],
+    "description": "Types of energy, Primary energy reserves, Commercial energy production, Energy needs of a growing economy, Electricity pricing, Tariffs, Energy security, Energy conservation. Energy conservation Act 2001, Electricity Act 2003, Energy policy, Objectives of Energy management and Auditing, Types of Energy audit, Benchmarking, Energy performance, Matching energy usage to requirement, maximizing system efficiencies, Fuel and energy substitution, Instruments and metering for energy audit, Bureau of Energy Efficiency regulations, Energy balance and material balance, Sankey diagram, Assessing energy profile and establishing baseline, Financial analysis techniques, Energy performance contracting and role of ESCOs, Project planning techniques, Energy monitoring and targeting, Energy management information systems, Energy and environment, Renewable energy sources, Demand side management.",
+    "references": [
+      "Guidebooks for National Certification Examination, 2020, [E-book] Available:http://aipnpc.org/Guidebooks.aspx.",
+      "Guidebook: Refresher Course for Certified Energy managers and Auditors, 2020, [E-book] Available: http://refreshercourse.in/Module/RC_Material.pdf",
+      "Wayne C. Turner, Energy Management Handbook, Fifth Edition, Fairmont Press, 2004",
+      "NPTEL - Energy conservation and waste heat recovery - https://nptel.ac.in/courses/112/105/112105221/"
+    ]
+  },
+  {
+    "code": "ELE 4313",
+    "title": "SOLAR PHOTOVOLTAICS",
+    "credits": [3, 0, 0, 3],
+    "description": "Solar Radiation: Spectrum, Terminologies, Measurement, Estimation; Sun-Earth Movement & Angles, Sun Tracking, PN Junction Diode & Characteristics, Solar Cell, Photovoltage, Light Generated Current, I-V equation & Characteristics: Short Circuit Current, Open Circuit Voltage, Maximum Power Point, Fill Factor, Efficiency, Losses, Equivalent Circuit, Effect of Series & Shunt Resistance, Solar Radiation, Temperature on Efficiency, Solar PV Modules: Series & Parallel connection, Hotspots, Bypass & Blocking Diodes, Power Output, Ratings, I-V & Power Curve, Effect of Solar Irradiation & Temperature, Balance of System (BOS): Batteries: Classification, Capacity, Voltage, Depth of Discharge, Life Cycle, Factors affecting Battery Performance; Charge Controllers, DC to DC Converters, DC to AC converters, Maximum Power Point Tracking (MPPT). Self-study: Solar Radiation data collection for India, Losses in solar cells, Applications of SPV system, Mechanical Energy storage systems",
+    "references": [
+      "Chetan Solanki, Solar Photovoltaics: Fundamentals, Technologies and Application, PHI New Delhi, 2009.",
+      "G.N. Tiwari, Solar Energy: Fundamentals, Design, Modeling and Applications, Narosa Publications New Delhi, 2013.",
+      "Suneel Deambi, Photovoltaic System Design, CRC Press USA, 2016.",
+      "Frank Kreith and D. Yogi Goswami, Energy Management and Conservation Handbook (2e), CRC Press USA, Fairmont Press, USA, 2017.",
+      "John Balfour, Michael Shaw and Nicole B. Nash, Advanced Photovoltaic Installations, Jones & Barlett Learning USA, 2013.",
+      "Nptel courses: https://nptel.ac.in/courses/115/107/115107116/"
+    ]
+  },
+  {
+    "code": "ICE 4314",
+    "title": "SENSOR TECHNOLOGY",
+    "credits": [3, 0, 0, 3],
+    "description": "Basic sensor technology, characteristics, Capacitive and Inductive Sensors, Displacement Sensors, Temperature Sensors, Force/Torque Sensors, Humidity and Moisture Sensors, Acoustic Sensors, Flow Sensors, Occupancy-Motion Detectors, Acceleration and Vibration Sensors, Chemical and Biosensors, Optical and radiations Sensors, Introduction to Wireless Sensor Networks (WSN) and Applications.",
+    "references": [
+      "Jon S Wilson, Sensor Technology Handbook, Newnes Elsevier Publication, 2005.",
+      "Jacob Fraden, Handbook of Modern Sensors: Physical, Designs, and Applications, Springer, 2004."
+    ]
+  },
+  {
+    "code": "ICE 4316",
+    "title": "VIRTUAL INSTRUMENTATION",
+    "credits": [3, 0, 0, 3],
+    "description": "Architecture of a virtual instrument, Virtual instruments V/s Traditional instruments, Advantages of VI, Graphical programming, Creating Virtual Instruments using LabVIEW-Loops, Arrays, Clusters, String and file I/O, Graphs, Data Acquisition, Common Instrument Interfaces, Current loop, System buses, Interface buses, VISA, Image acquisition and processing, Design of ON/OFF controller for a mathematically described processes using VI software",
+    "references": [
+      "Gary Johnson, LabVIEW Graphical Programming, (2e), MGH, 1997.",
+      "Lisa K. wells & Jeffrey Travis, LabVIEW for everyone, National Instruments, 1997.",
+      "S. Sumathi, P Surekha, LabVIEW based Advanced Instrumentation systems, Springer, 2007.",
+      "Rick Bitter, Taqi Mohiuddin, Matt Nawrocki, LabVIEW Advanced Programming Techniques, CRC Press, 2007.",
+      "Jovitha Jerome, Virtual Instrumentation using LabVIEW, PHI, 2010."
+    ]
+  },
+  {
+    "code": "CIE 4314",
+    "title": "GEOLOGY FOR ENGINEERS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Physical Geology: Origin of Earth, Interior structure of Earth. Seismology, Plate Tectonics, Earthquakes. Tsunamis. Introduction to minerals and rocks. Engineering properties of important rocks. Weathering of rocks, Soil forming processes. Landforms and processes associated with river, wind, and groundwater. Structural Geology, Groundwater, Engineering Geology, Landslides, Remote",
+    "references": [
+      "Parbin Singh, Engineering Geology, S.K. Kataria and Sons, New Delhi. 2002",
+      "Mukherjee P.K., A text book of Geology, World Press, Kolkata 2003",
+      "Venkata Reddy D., Engineering Geology for Civil Engineering, Oxford and IBH Publishing Co. Pvt. Ltd., New Delhi 1995"
+    ]
+  },
+  {
+    "code": "CIE 4313",
+    "title": "ENVIRONMENTAL MANAGEMENT",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, sustainability and sustainable development, environmental management system, Environmental ethics, Environmental Impact Assessment, Life cycle assessment, ISO 14000, Environmental auditing, corporate environmental management product design for the environment, Environmental economics and environmental design-application, Case studies.",
+    "references": [
+      "Ramachandra T.V, Environmental Management, IISC Bangalore, 2012",
+      "Lohani B.N, Environmental Quality Management, South Asian Publishers, New Delhi, 1984",
+      "MOEF, Government of India, Carrying Capacity Based Developmental Planning Studies for the National Capital Region, 1995-96.",
+      "Chanlett, Environmental Protection, McGraw Hill Publication, New York, 1973",
+      "Environmental Laws-MOEF, Government of India"
+    ]
+  },
+  {
+    "code": "CIE 4316",
+    "title": "STRENGTH OF MATERIALS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction. Shear Force and Bending Moment in Beams. Bending and Shear Stresses in Beams. Slope and Deflection of statically determinate beams by Macaulay's method. Torsion in Circular Shaft: Introduction, pure torsion, assumptions, derivation of torsion equation for circular shafts, torsional rigidity and polar modulus, power transmitted by a shaft, application numerical. Compound Stresses, Mohr's circle of stresses, numerical problems. Columns and Struts.",
+    "references": [
+      "Basavarajaiah B.S and Mahadevappa P, Strength of Materials, University Press (India) Pvt. Ltd., 2010.",
+      "Ferdinand P. Beer, E. Russell Johnston and Jr.John T. D., Mechanics of Materials, (3e), Tata McGraw-Hill, 2012.",
+      "Andrew Pytel, Singer F. L, Strength of Materials Harper and Collins 1987.",
+      "Young D. H, Timoshenko S.P, Elements of Strength of Materials, East West Press Pvt. Ltd., 2014.",
+      "Bansal R.K, A Textbook of Strength of Materials, Laxmi Publications, 2014.",
+      "Rattan S.S, Strength of Materials, McGraw Hill Education (India) Pvt. Ltd., 2013."
+    ]
+  },
+  {
+    "code": "HUM 4337",
+    "title": "INTRODUCTION TO ENTERPRISE RISK MANAGEMENT",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Risk Maturity, Global Risks, The Present State of Global Corporations, Businesses & Processes. Risk Culture - A Practical Approach to Risk Management, The Individual Level, Personal Predisposition to Risk, Personal Ethics. Risk & Risk Management - Other Concepts, Definition of Risk Management. COSO Framework - Structure and Approach of COSO Guidance. Designing a Risk Appetite - \"The Building Blocks\", Risk Capacity. Implementing a Risk Appetite. Resources and Implementation. Extended Enterprise - An Overview- Operating in the Extended Enterprise, Preliminary Steps. Risk Communication in the 21st Century Extended Enterprise. Importance of Risk Communication. Factors Affecting Risk Communication. Public Perceptions and Priorities. Components of a Risk Communication Plan. Incident Response Specific Communication. Desired Outcomes from Assurance. Mending the Assurance Model.",
+    "references": [
+      "Hersh Shah, Enterprise Risk Management, 2e. Handbook for working professionals, IRM India Affiliate. 2024."
+    ]
+  },
+  {
+    "code": "AAE 4311",
+    "title": "INTRODUCTION TO AEROSPACE ENGINEERING",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction and Overview of The History of Flight, Fundamental Thoughts, Ballooning, Basic/Constructive Principles of Fluid Mechanics-Bernoulli's Theorem and Control Volume Approaches, The Sources of all Aerodynamic Forces, Standard Atmosphere, Hydrostatic Equation, Incompressible and Compressible Flows, Elementary Thermodynamics and Isentropic flow, Flow Regimes and Estimation of Viscous, Thermal Effects, Basics of Aerodynamics, Airfoil Nomenclature, Lift, Drag and Moment Coefficient, Infinite vs Finite Wings, Pressure Coefficients, Elements of Airplane Performance, Astronautics, Basics of Propulsion. Orbital Mechanics.",
+    "references": [
+      "Anderson Jr. JD, Introduction to Flight, McGraw Hill International Edition, (2012).",
+      "Dava Newman, Interactive Aerospace Engineering and Design, McGraw Hill International Edition, (2002).",
+      "A.C.Kermode, Flight without Formulae, Pearson Education (United Kingdom), (1990).",
+      "Howard D Curtis., Orbital mechanics for Engineering Students, Butterworth Heinemann, (2013).",
+      "Anderson Jr. JD, Fundamental of Aerodynamics, McGraw Hill International Edition, (2017)."
+    ]
+  },
+  {
+    "code": "AAE 4313",
+    "title": "INTRODUCTION TO AUTOMOBILE ENGINEERING",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Engine classification, parts and nomenclature of the engine, valve timing diagram, automotive systems such as types of fuel supply, types of cooling, types of Ignition, types of lubrication, types of transmission, types of suspension, modern safety aspects, tyres & wheels, starting and lighting systems.",
+    "references": [
+      "Dr Kirpal Singh, Automobile Engineering Vol 1 and Vol 2, Standard Publishers Distributors, 2016.",
+      "M L Mathur and R P Sharma, Internal Combustion Engines, Dhanpat Rai Publications, New Delhi, 2011.",
+      "V Ganesan, Internal Combustion Engines, Tata Mcgraw-hill Education, New Delhi, 2012."
+    ]
+  },
+  {
+    "code": "HUM 4322",
+    "title": "FILM STUDIES",
+    "credits": [3, 0, 0, 3],
+    "description": "History of invention of motion pictures - Daguerre, Muybridge, Edison, Skaldanowsky Brothers, Lumieres; Evolution of film – Lumieres, Melies, Porter, Griffith, Basic techniques – Mise-en-scene, Mise-en-shot, Deepfocus Photography, Longtake, Continuity, Editing, Montage, German Expressionism; French Impressionism; Soviet Montage cinema; Hollywood cinema, Italian Neo-realism; French Nouvelle Vague, Documentary, Directors – Eisenstein, Kurosawa, Godard, Chaplin, Bergman; Mohsen Makmalbakf, Majid Majidi, Keislowski, Zhang Yimou, Kim Ki Duk, “New Wave” Cinema in India - Bengali; Malayalam; Kannada; Hindi, To be screened- Bicycle Thieves, The 400 blows, Rashomon, Wild strawberries, Battleship Potemkin, Cabinet of Dr. Caligari, The kid, Children of heaven, Hero, Ghatashraddha, Pather Panchali, Mathilukal.",
+    "references": [
+      "100 Years of American Films · , Ref PN1993.5.U6A59 2000.",
+      "Bowker's Complete Video Directory·, Ref PN1992.95B69.",
+      "Cinema Studies: The Key Concepts·, Ref PN1993.45.H36 2000.",
+      "Dictionary of Film Studies: The Aesthetic Companion to Film and Art · , Ref PN1993.45 .B33 2006.",
+      "Filmakers Dictionary·, Ref PN1993.45.S56 1990.",
+      "Halliwell's Film and Video Guide·, Ref PN1998.H433."
+    ]
+  },
+  {
+    "code": "CIE 4315",
+    "title": "INTRODUCTION TO REMOTE SENSING AND GIS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction, Basic concepts and physics of remote sensing, Image composition, different types of resolutions, image correction, and noise removal, Image enhancement, visual interpretation, Fundamentals of GIS, exercise on remote sensing and GIS application, definitions of Triangular Irregular Network (TIN) and Digital Elevation Model (DEM) exercises in GIS, Indian satellite program, launch vehicles, exercise on RS and GIS applications.",
+    "references": [
+      "Lillesand T. M., and Kiefer, R.W. Remote Sensing and Image interpretation, (6e), of John Wiley & Sons 2000",
+      "John R. Jensen, Introductory Digital Image Processing: A Remote Sensing Perspective, (2e), 1995",
+      "Sabins, F. F. Jr, “Remote Sensing Principles and Image interpretation”, W. H. Freeman & Co. 1978",
+      "Allan Brimicombe, “GIS Environmental Modeling and Engineering”, Taylor & Francis, 2003"
+    ]
+  },
+  {
+    "code": "CHM 4312",
+    "title": "SUSTAINABLE CHEMICAL PROCESSES AND PRODUCTS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction: Definition, twelve principles, evaluating products, processes, starting materials and reaction types, examples of green products, reactions, reagents, solvents, catalysts and starting materials, atom economy, reaction mass efficiency, effective mass yield, carbon efficiency and eco-factor, green chemistry matrices, life cycle analysis, product and process design for sustainability, chemical product legislation-REACH Catalysis and green chemistry: Catalysis in the chemical industry-bulk chemicals; alkylation and selective oxidation reactions, fine chemicals; synthesis of certain chemical products, importance of selective catalysts in sustainable development, selectivity in catalysis, catalyst for clean technology, heterogenization, reparation of supported reagents, applications and analysis of eco-friendly approach of waste treatment. Cleaner Production: Examples, process design aspects, high-throughput syntheses, scale up and industrial applications of clean synthesis, use of microwaves, ultraviolet and infrared radiations, insecticides based on natural products, eco-friendly bio-pesticides, industrial examples- polymer, pesticide, food and flavor, dye, paper and pulp, and pharmaceutical industries, use of enzymes in oxidation, reduction and hydrolysis reactions, electrochemical synthesis",
+    "references": [
+      "P.T. Anastas, J.C. Warner, “Green Chemistry: Theory and practice”, Oxford Univ. Press, Oxford, 2008",
+      "A.S. Matlack, “Introduction to Green Chemistry”, Marcel Dekker, New York, 2001",
+      "P.T. Anastas, R.H. Crabtree, “Handbook of Green Chemistry and Catalysis”, Wiely-VCH, Weijeim, 2009"
+    ]
+  },
+  {
+    "code": "ECE 4313",
+    "title": "INTRODUCTION TO COMMUNICATION SYSTEMS",
+    "credits": [3, 0, 0, 3],
+    "description": "Model of communication systems and types of electronic communication. Telephone system, signaling tones, DTMF. Optical fibers, numerical aperture. Attenuation and dispersion, optical sources and detectors. Principles of satellite orbits and positioning, Earth station technology, multiple access techniques, Application of satellites. Free space optical communications: ATP using FSO and RF. Wireless Communications: Frequency reuse, cell splitting, sectoring, macro cell and micro cell, Architecture of GSM systems. Fundamentals of RADAR systems: Pulse radar, duplexer, MTI Radar. Wireless LAN, PAN, bluetooth, ZigBee, RFID and NFC. *Self-directed Learning: Simulation of basic communication system using MATLAB- Simulink",
+    "references": [
+      "FrenzelL.E.Jr., “Principles of Electronic Communication Systems”, 4th Ed. Mc Graw Hill Education, 2016.",
+      "Pratt T., “Satellite Communication Systems”, John Wileyand Sons,2006.",
+      "Stallings W., “Wireless Communication and Networks”, PearsonEducation,2006.",
+      "Keiser G., “OpticalFiberCommunication”,McGrawHill,1991.",
+      "Kennedy G. and Davis B., “Electronic Communication Systems\", Tata McGraw Hill, 1999.",
+      "Self-Learning part: https://www.youtube.com/playlist?list=PLq-Gm0yRYwTgX2FkPVcY6io003-tZd8Ru"
+    ]
+  },
+  {
+    "code": "HUM 4323",
+    "title": "GERMAN FOR BEGINNERS",
+    "credits": [3, 0, 0, 3],
+    "description": "Text selections, dialogue and exercises which have been designed to give the absolute beginner grounding in the rudiments of the German language, as well as providing background information about the history, life and culture in Germany. Introduction to the German alphabet and the German language – dialogues & conversations – pronunciation - basic vocabulary lists - key points of grammar - background information about the history and culture of Germany - exercises on vocabulary, grammar and German culture - reading & listening comprehension.",
+    "references": [
+      "Sally Johnson, Natalie Braber, 2008 Exploring the German Language, Second Edition, Cambridge University Press.",
+      "Charles Russ, 1994 The German Language Today: A Linguistic Introduction, Routledge."
+    ]
+  },
+  {
+    "code": "ELE 4311",
+    "title": "MATLAB FOR ENGINEERS",
+    "credits": [3, 0, 0, 3],
+    "description": "Introduction to MATLAB live script environment, matrices & arrays, calling functions, 2D & 3D plots, conditional statements, loop control statements, user-defined functions; evaluating an expression, solving equations, differentiation, integration, sum, limit; simple and multiple linear regression analysis, evaluating the goodness of fit using MATLAB; ordinary differential equations in Simulink, conditional blocks, subsystems, MATLAB function block, introduction to Simscape; introduction to App Designer, programming various objects like axes, botton, edit field, slider, label; interfacing Arduino, raspberry pi and smartphone sensors with MATLAB. Self-study: Simulation studies on Symbolic Math, Statistical Methods and GUI development",
+    "references": [
+      "https://www.mathworks.com/",
+      "Stephen J. Chapman, Essentials of MATLAB Programming,6e, Cengage Learning 2019,",
+      "Rudra Pratap, Getting Started with MATLAB, 7e, Oxford University Press, 2019",
+      "Self -paced online courses - https://matlabacademy.mathworks.com/"
+    ]
+  }
+]
