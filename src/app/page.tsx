@@ -158,7 +158,7 @@ export default function Home() {
                     Back to list
                   </Button>
                 </div>
-                <div className="flex-1 min-h-0 overflow-hidden">
+                <div className="flex-1 h-full overflow-hidden">
                   <CurriculumPanel code={selectedCode} />
                 </div>
               </div>

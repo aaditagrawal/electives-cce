@@ -34,7 +34,7 @@ export function CurriculumPanel({ code }: CurriculumPanelProps) {
   };
 
   return (
-    <ScrollArea className="flex-1 min-h-0">
+    <ScrollArea className="h-full">
       <div className="p-4 sm:p-5 md:p-6 max-w-2xl">
         {/* Header */}
         <div className="mb-4">
