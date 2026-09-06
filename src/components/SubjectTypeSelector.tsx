@@ -1,7 +1,12 @@
 "use client";
 
-import { getSubjectTypeCounts, getMinorOnlyCounts, getSubjectTypeInfo } from "@/lib/data";
-import { cn } from "@/lib/utils";
+import { styleClass } from "@/styles/classes";
+
+import {
+  getSubjectTypeCounts,
+  getMinorOnlyCounts,
+  getSubjectTypeInfo,
+} from "@/lib/data";
 
 interface SubjectTypeSelectorProps {
   selectedType: string | null;
@@ -19,7 +24,7 @@ export function SubjectTypeSelector({
   const types = ["PE1", "PE2", "FC2", "OE"];
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3">
+    <div className={styleClass("subjectTypeSelectorGrid")}>
       {types.map((type) => {
         const info = getSubjectTypeInfo(type);
         const isSelected = selectedType === type;
@@ -29,28 +34,25 @@ export function SubjectTypeSelector({
           <button
             key={type}
             type="button"
-            className={cn(
-              "text-left p-3 md:p-4 rounded-lg border bg-card transition-all duration-150 hover:bg-accent",
-              isSelected && "ring-1 ring-foreground"
-            )}
+            className={styleClass(isSelected ? "typeCardSelected" : "typeCard")}
             onClick={() => onSelectType(type)}
           >
-            <div className="flex items-baseline justify-between mb-1.5 md:mb-2">
-              <span className="text-xl md:text-2xl font-mono font-semibold">
+            <div className={styleClass("subjectTypeSelectorHeading")}>
+              <span className={styleClass("subjectTypeSelectorName")}>
                 {info.name}
               </span>
-              <div className="flex items-baseline gap-1">
-                <span className="text-lg md:text-xl font-mono text-muted-foreground">
+              <div className={styleClass("subjectTypeSelectorCounts")}>
+                <span className={styleClass("subjectTypeSelectorCount")}>
                   {counts[type] || 0}
                 </span>
                 {withMinor && minorCount > 0 && (
-                  <span className="text-[10px] font-mono text-purple-400">
+                  <span className={styleClass("subjectTypeSelectorMinorCount")}>
                     +{minorCount}M
                   </span>
                 )}
               </div>
             </div>
-            <p className="text-[10px] md:text-xs text-muted-foreground leading-tight">
+            <p className={styleClass("subjectTypeSelectorDescription")}>
               {info.fullName}
             </p>
           </button>

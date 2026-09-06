@@ -1,5 +1,8 @@
 "use client";
 
+import { styles } from "@/styles/site.stylex";
+import { styleClass } from "@/styles/classes";
+
 import { useState, useEffect, useMemo } from "react";
 import {
   Dialog,
@@ -19,11 +22,17 @@ interface SearchDialogProps {
   subjects: Subject[];
 }
 
-export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: SearchDialogProps) {
+export function SearchDialog({
+  open,
+  onOpenChange,
+  onSelectSubject,
+  subjects,
+}: SearchDialogProps) {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
     if (open) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Preserve clearing the query when the existing dialog opens.
       setQuery("");
     }
   }, [open]);
@@ -58,7 +67,7 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: 
   const getSourceIndicator = (code: string) => {
     const curriculum = getCurriculum(code);
     const type = curriculum.source.type;
-    
+
     if (type === "definitive") return "●";
     if (type === "speculative") return "◐";
     if (type === "external") return "◌";
@@ -67,30 +76,43 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: 
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-lg p-0 gap-0">
-        <DialogHeader className="p-4 pb-2">
-          <DialogTitle className="text-sm font-medium text-muted-foreground">
+      <DialogContent
+        xstyle={styles.searchDialogContent}
+        className="sx-searchDialogContent"
+      >
+        <DialogHeader
+          xstyle={styles.searchDialogHeader}
+          className="sx-searchDialogHeader"
+        >
+          <DialogTitle
+            xstyle={styles.searchDialogTitle}
+            className="sx-searchDialogTitle"
+          >
             Search Subjects
           </DialogTitle>
         </DialogHeader>
-        
-        <div className="px-4 pb-2">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+
+        <div className={styleClass("searchDialogSearchContainer")}>
+          <div className={styleClass("searchDialogSearchField")}>
+            <Search className={styleClass("searchDialogSearchIcon")} />
             <Input
               placeholder="Search by code, name, or content..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="pl-9 h-10 font-mono text-sm"
+              xstyle={styles.searchDialogInput}
+              className="sx-searchDialogInput"
               autoFocus
             />
           </div>
         </div>
 
-        <ScrollArea className="max-h-[300px] border-t border-border">
-          <div className="p-2">
+        <ScrollArea
+          xstyle={styles.searchDialogResults}
+          className="sx-searchDialogResults"
+        >
+          <div className={styleClass("searchDialogResultList")}>
             {filteredSubjects.length === 0 ? (
-              <div className="py-8 text-center text-sm text-muted-foreground">
+              <div className={styleClass("searchDialogEmpty")}>
                 No subjects found
               </div>
             ) : (
@@ -98,32 +120,42 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: 
                 const curriculum = getCurriculum(subject["SUBJECT CODE"]);
                 const typeInfo = getSubjectTypeInfo(subject["Type of Subject"]);
                 const isMinorOnly = subject["Minor-Only"] === "yes";
-                
+
                 return (
                   <button
                     key={subject["SUBJECT CODE"]}
-                    className="w-full text-left p-2.5 rounded hover:bg-accent transition-colors"
+                    className={styleClass("searchDialogResult")}
                     onClick={() => handleSelect(subject)}
                   >
-                    <div className="flex items-start gap-3">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className="font-mono text-xs font-medium text-foreground">
+                    <div className={styleClass("searchDialogResultRow")}>
+                      <div className={styleClass("searchDialogResultContent")}>
+                        <div
+                          className={styleClass("searchDialogResultHeading")}
+                        >
+                          <span
+                            className={styleClass("searchDialogResultCode")}
+                          >
                             {subject["SUBJECT CODE"]}
                           </span>
-                          <span className="text-[10px] text-muted-foreground">
+                          <span
+                            className={styleClass("searchDialogResultSource")}
+                          >
                             {getSourceIndicator(subject["SUBJECT CODE"])}
                           </span>
-                          <span className="text-[9px] px-1.5 py-0.5 bg-muted rounded text-muted-foreground">
+                          <span
+                            className={styleClass("searchDialogResultType")}
+                          >
                             {typeInfo.name}
                           </span>
                           {isMinorOnly && (
-                            <span className="text-[9px] px-1.5 py-0.5 bg-purple-500/20 text-purple-400 rounded">
+                            <span
+                              className={styleClass("searchDialogResultMinor")}
+                            >
                               M
                             </span>
                           )}
                         </div>
-                        <p className="text-xs text-muted-foreground mt-0.5 truncate">
+                        <p className={styleClass("searchDialogResultTitle")}>
                           {curriculum.title}
                         </p>
                       </div>
@@ -135,14 +167,15 @@ export function SearchDialog({ open, onOpenChange, onSelectSubject, subjects }: 
           </div>
         </ScrollArea>
 
-        <div className="p-2 border-t border-border text-[10px] text-muted-foreground flex items-center justify-between">
+        <div className={styleClass("searchDialogFooter")}>
           <span>
-            {filteredSubjects.length} result{filteredSubjects.length !== 1 ? "s" : ""}
+            {filteredSubjects.length} result
+            {filteredSubjects.length !== 1 ? "s" : ""}
           </span>
-          <span className="flex items-center gap-1">
-            <kbd className="px-1.5 py-0.5 bg-muted rounded text-[9px]">↵</kbd>
+          <span className={styleClass("searchDialogFooterHints")}>
+            <kbd className={styleClass("searchDialogEnterKey")}>↵</kbd>
             <span>to select</span>
-            <kbd className="px-1.5 py-0.5 bg-muted rounded text-[9px] ml-2">esc</kbd>
+            <kbd className={styleClass("searchDialogEscapeKey")}>esc</kbd>
             <span>to close</span>
           </span>
         </div>

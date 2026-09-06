@@ -1,3 +1,4 @@
+import { styleClass } from "@/styles/classes";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -16,14 +17,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Commit+Mono:wght@400;700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
         />
         <script defer src="https://stat.sys256.com/script.js"></script>
       </head>
-      <body className="antialiased">
+      <body className={styleClass("documentBody")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
