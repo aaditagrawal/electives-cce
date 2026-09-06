@@ -90,14 +90,14 @@
 @media (hover: hover) {
   .sx-curriculumPanelResourceArrow:not(#\#):not(#\#):not(#\#):not(#\#):not(
       #\#
-    ):not(#\#):not(#\#):not(#\#):is(:where(.group):hover *) {
+    ):not(#\#):not(#\#):not(#\#):is(:where(.ui-resource-link):hover *) {
     opacity: 1;
   }
 }
 @media (hover: hover) {
   .sx-curriculumPanelCourseLinkArrow:not(#\#):not(#\#):not(#\#):not(#\#):not(
       #\#
-    ):not(#\#):not(#\#):not(#\#):is(:where(.group):hover *) {
+    ):not(#\#):not(#\#):not(#\#):is(:where(.ui-resource-link):hover *) {
     opacity: 1;
   }
 }

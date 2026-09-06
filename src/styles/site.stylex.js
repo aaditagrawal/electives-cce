@@ -118,6 +118,7 @@ export const styles = stylex.create({
       "var(--tw-ease,var(--default-transition-timing-function))",
     transitionDuration: "var(--tw-duration,var(--default-transition-duration))",
   },
+  // Preserve the original small-screen hiding rule for toolbar labels.
   pageMinorLabel: {
     display: {
       default: "none",
@@ -1691,6 +1692,7 @@ export const styles = stylex.create({
     height: "calc(var(--spacing)*3.5)",
     width: "calc(var(--spacing)*3.5)",
   },
+  // Screen-reader label: keep the original 1px clipped box and no visible text.
   themeToggleLabel: {
     clipPath: "inset(50%)",
     whiteSpace: "nowrap",
@@ -2114,7 +2116,7 @@ export const styles = stylex.create({
       "var(--tw-ease,var(--default-transition-timing-function))",
     transitionDuration: "var(--tw-duration,var(--default-transition-duration))",
   },
-  dialogCloseIcon: {
+  dialogCloseLabel: {
     clipPath: "inset(50%)",
     whiteSpace: "nowrap",
     borderWidth: "0",
@@ -2125,7 +2127,7 @@ export const styles = stylex.create({
     position: "absolute",
     overflow: "hidden",
   },
-  dialogCloseLabel: {
+  dialogHeader: {
     display: "flex",
     flexDirection: "column",
     gap: "calc(var(--spacing)*2)",
@@ -2134,7 +2136,7 @@ export const styles = stylex.create({
       "@media (min-width:40rem)": "left",
     },
   },
-  dialogHeader: {
+  dialogFooter: {
     display: "flex",
     flexDirection: {
       default: "column-reverse",
@@ -2146,14 +2148,14 @@ export const styles = stylex.create({
       "@media (min-width:40rem)": "flex-end",
     },
   },
-  dialogFooter: {
+  dialogTitle: {
     fontSize: "var(--text-lg)",
     lineHeight: "1",
     "--tw-leading": "1",
     "--tw-font-weight": "var(--font-weight-semibold)",
     fontWeight: "var(--font-weight-semibold)",
   },
-  dialogTitle: {
+  dialogDescription: {
     fontSize: "var(--text-sm)",
     lineHeight: "var(--tw-leading,var(--text-sm--line-height))",
     color: "var(--muted-foreground)",

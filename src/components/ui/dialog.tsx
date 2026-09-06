@@ -70,7 +70,7 @@ function DialogContent({
             className={styleClass("dialogClose")}
           >
             <XIcon />
-            <span className={styleClass("dialogCloseIcon")}>Close</span>
+            <span className={styleClass("dialogCloseLabel")}>Close</span>
           </DialogPrimitive.Close>
         )}
       </DialogPrimitive.Content>
@@ -86,7 +86,7 @@ function DialogHeader({
   return (
     <div
       data-slot="dialog-header"
-      className={cn(styleClass("dialogCloseLabel", xstyle), className)}
+      className={cn(styleClass("dialogHeader", xstyle), className)}
       {...props}
     />
   );
@@ -100,7 +100,7 @@ function DialogFooter({
   return (
     <div
       data-slot="dialog-footer"
-      className={cn(styleClass("dialogHeader", xstyle), className)}
+      className={cn(styleClass("dialogFooter", xstyle), className)}
       {...props}
     />
   );
@@ -114,7 +114,7 @@ function DialogTitle({
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn(styleClass("dialogFooter", xstyle), className)}
+      className={cn(styleClass("dialogTitle", xstyle), className)}
       {...props}
     />
   );
@@ -128,7 +128,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn(styleClass("dialogTitle", xstyle), className)}
+      className={cn(styleClass("dialogDescription", xstyle), className)}
       {...props}
     />
   );
