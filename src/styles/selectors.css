@@ -1,0 +1,1827 @@
+/* Compound state and descendant rules retain the original cascade order.
+ * Specificity sentinels keep these overrides above StyleX property atoms.
+ * The ui-size-defined marker preserves the original SVG size exclusion. */
+/* Preserve compound states and descendants in their original cascade order.
+ * Specificity sentinels keep these rules above compiled atomic declarations. */
+:where(
+  .sx-curriculumPanelResourceList:not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+:where(
+  .sx-referencesListList:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+:where(
+  .sx-creditsBadgeRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 2) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+:where(
+  .sx-pageIntro:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 3) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+:where(
+  .sx-curriculumPanelCombined:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 4) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+:where(
+  .sx-pageLandingContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)
+    > :not(:last-child)
+) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 8) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+@media (hover: hover) {
+  .sx-curriculumPanelResourceArrow:not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):not(#\#):is(:where(.ui-resource-link):hover *) {
+    opacity: 1;
+  }
+}
+@media (hover: hover) {
+  .sx-curriculumPanelCourseLinkArrow:not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):not(#\#):is(:where(.ui-resource-link):hover *) {
+    opacity: 1;
+  }
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  ::selection {
+  background-color: var(--primary);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::selection {
+  background-color: var(--primary);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  ::selection {
+  color: var(--primary-foreground);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::selection {
+  color: var(--primary-foreground);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  display: inline-flex;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  height: calc(var(--spacing) * 7);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  border-style: var(--tw-border-style);
+  border-width: 0;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  background-color: #0000;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::file-selector-button {
+  color: var(--foreground);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)::placeholder {
+  color: var(--muted-foreground);
+}
+.sx-creditsBadgeDetail:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.sx-creditsBadgeDetail:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+@media (hover: hover) {
+  .sx-minorDisabled:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-pageSearchTrigger:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-searchDialogResult:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-subjectRow:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-typeCard:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-typeCardSelected:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-subjectRow:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--accent) 50%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-curriculumPanelResourceLink:not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  .sx-curriculumPanelCourseLink:not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-curriculumPanelResourceLink:not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--accent) 80%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-curriculumPanelCourseLink:not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--accent) 80%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--destructive);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):not(#\#):hover {
+      background-color: color-mix(
+        in oklab,
+        var(--destructive) 90%,
+        transparent
+      );
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--primary);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--secondary);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--secondary) 80%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    color: var(--accent-foreground);
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    color: var(--accent-foreground);
+  }
+}
+@media (hover: hover) {
+  .sx-pageMinorHintAction:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    color: var(--foreground);
+  }
+}
+@media (hover: hover) {
+  .sx-referencesListLink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    color: var(--muted-foreground);
+  }
+}
+@media (hover: hover) {
+  .sx-pageGuideLink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):hover {
+    text-decoration-line: underline;
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    text-decoration-line: underline;
+  }
+}
+@media (hover: hover) {
+  .sx-subjectSidebarMoveUp:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    opacity: 1;
+  }
+}
+@media (hover: hover) {
+  .sx-subjectSidebarMoveDown:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    opacity: 1;
+  }
+}
+@media (hover: hover) {
+  .sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):hover {
+    opacity: 1;
+  }
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus {
+  --tw-ring-color: var(--ring);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus {
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus {
+  --tw-outline-style: none;
+  outline-style: none;
+}
+@media (forced-colors: active) {
+  .sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):focus {
+    outline-offset: 2px;
+    outline: 2px solid #0000;
+  }
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  border-color: var(--ring);
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-scrollAreaViewport:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--destructive);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+.sx-scrollAreaViewport:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  --tw-ring-color: var(--ring);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-scrollAreaViewport:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+  }
+}
+.sx-scrollAreaViewport:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):focus-visible {
+  outline-style: var(--tw-outline-style);
+  outline-width: 1px;
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  pointer-events: none;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  cursor: not-allowed;
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):disabled {
+  opacity: 0.5;
+}
+.sx-cardHeader:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):has([data-slot="card-action"]) {
+  grid-template-columns: 1fr auto;
+}
+.sx-buttonsizesm:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):has(> svg) {
+  padding-inline: calc(var(--spacing) * 2.5);
+}
+.sx-buttonsizedefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):has(> svg) {
+  padding-inline: calc(var(--spacing) * 3);
+}
+.sx-buttonsizelg:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):has(> svg) {
+  padding-inline: calc(var(--spacing) * 4);
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  border-color: var(--destructive);
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+  }
+}
+.sx-separatorRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-orientation="horizontal"] {
+  height: 1px;
+}
+.sx-separatorRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-orientation="horizontal"] {
+  width: 100%;
+}
+.sx-separatorRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-orientation="vertical"] {
+  height: 100%;
+}
+.sx-separatorRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-orientation="vertical"] {
+  width: 1px;
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-side="bottom"] {
+  --tw-enter-translate-y: calc(2 * var(--spacing) * -1);
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-side="left"] {
+  --tw-enter-translate-x: calc(2 * var(--spacing));
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-side="right"] {
+  --tw-enter-translate-x: calc(2 * var(--spacing) * -1);
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-side="top"] {
+  --tw-enter-translate-y: calc(2 * var(--spacing));
+}
+.sx-dialogOverlay:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  animation: exit var(--tw-animation-duration, var(--tw-duration, 0.15s))
+    var(--tw-ease, ease) var(--tw-animation-delay, 0s)
+    var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal)
+    var(--tw-animation-fill-mode, none);
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  animation: exit var(--tw-animation-duration, var(--tw-duration, 0.15s))
+    var(--tw-ease, ease) var(--tw-animation-delay, 0s)
+    var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal)
+    var(--tw-animation-fill-mode, none);
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  animation: exit var(--tw-animation-duration, var(--tw-duration, 0.15s))
+    var(--tw-ease, ease) var(--tw-animation-delay, 0s)
+    var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal)
+    var(--tw-animation-fill-mode, none);
+}
+.sx-dialogOverlay:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  --tw-exit-opacity: 0;
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  --tw-exit-opacity: 0;
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  --tw-exit-opacity: 0;
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  --tw-exit-scale: 0.95;
+}
+.sx-tooltipContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="closed"] {
+  --tw-exit-scale: 0.95;
+}
+.sx-dialogOverlay:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  animation: enter var(--tw-animation-duration, var(--tw-duration, 0.15s))
+    var(--tw-ease, ease) var(--tw-animation-delay, 0s)
+    var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal)
+    var(--tw-animation-fill-mode, none);
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  animation: enter var(--tw-animation-duration, var(--tw-duration, 0.15s))
+    var(--tw-ease, ease) var(--tw-animation-delay, 0s)
+    var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal)
+    var(--tw-animation-fill-mode, none);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  background-color: var(--accent);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  color: var(--muted-foreground);
+}
+.sx-dialogOverlay:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  --tw-enter-opacity: 0;
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  --tw-enter-opacity: 0;
+}
+.sx-dialogContent:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)[data-state="open"] {
+  --tw-enter-scale: 0.95;
+}
+@media (min-width: 40rem) {
+  :where(
+    .sx-referencesListList:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#)
+      > :not(:last-child)
+  ) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(
+      calc(var(--spacing) * 2) * var(--tw-space-y-reverse)
+    );
+    margin-block-end: calc(
+      calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse))
+    );
+  }
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *) {
+  border-color: var(--input);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *) {
+  background-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *) {
+  background-color: var(--destructive);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *) {
+    background-color: color-mix(in oklab, var(--destructive) 60%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *) {
+    background-color: color-mix(in oklab, var(--destructive) 60%, transparent);
+  }
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *) {
+  background-color: var(--input);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):is(.dark *) {
+  background-color: var(--input);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *) {
+    background-color: color-mix(in oklab, var(--input) 30%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):is(.dark *) {
+    background-color: color-mix(in oklab, var(--input) 30%, transparent);
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):is(.dark *):hover {
+      background-color: color-mix(in oklab, var(--accent) 50%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *):hover {
+    background-color: var(--input);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):is(.dark *):hover {
+      background-color: color-mix(in oklab, var(--input) 50%, transparent);
+    }
+  }
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *):focus-visible {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *):focus-visible {
+  --tw-ring-color: var(--destructive);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *):focus-visible {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+.sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):is(.dark *)[aria-invalid="true"] {
+  --tw-ring-color: var(--destructive);
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+@supports (color: color-mix(in lab, red, red)) {
+  .sx-inputRoot:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+  }
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  pointer-events: none;
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg {
+  flex-shrink: 0;
+}
+.sx-buttonvariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonvariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonvariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonvariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonvariantghost:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonvariantlink:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-buttonBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-dialogClose:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  svg:not([class*="size-"]) {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+.sx-cardHeader:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#).border-b {
+  padding-bottom: calc(var(--spacing) * 6);
+}
+.sx-cardFooter:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#).border-t {
+  padding-top: calc(var(--spacing) * 6);
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  pointer-events: none;
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  pointer-events: none;
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  pointer-events: none;
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  pointer-events: none;
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  > svg {
+  pointer-events: none;
+}
+.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#):not(#\#)
+  > svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+.sx-badgeBase:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+    #\#
+  ):not(#\#)
+  > svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+@media (hover: hover) {
+  a.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--accent);
+  }
+}
+@media (hover: hover) {
+  a.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--destructive);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    a.sx-badgevariantdestructive:not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):not(#\#):hover {
+      background-color: color-mix(
+        in oklab,
+        var(--destructive) 90%,
+        transparent
+      );
+    }
+  }
+}
+@media (hover: hover) {
+  a.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--primary);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    a.sx-badgevariantdefault:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  a.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    background-color: var(--secondary);
+  }
+}
+@media (hover: hover) {
+  @supports (color: color-mix(in lab, red, red)) {
+    a.sx-badgevariantsecondary:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+        #\#
+      ):not(#\#):not(#\#):hover {
+      background-color: color-mix(in oklab, var(--secondary) 90%, transparent);
+    }
+  }
+}
+@media (hover: hover) {
+  a.sx-badgevariantoutline:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(
+      #\#
+    ):not(#\#):not(#\#):hover {
+    color: var(--accent-foreground);
+  }
+}

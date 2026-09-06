@@ -1,5 +1,7 @@
 "use client";
 
+import { styleClass } from "@/styles/classes";
+
 interface CreditsBadgeProps {
   credits: [number, number, number, number];
 }
@@ -10,31 +12,35 @@ export function CreditsBadge({ credits }: CreditsBadgeProps) {
   const fullLabels = ["Lecture", "Tutorial", "Practical"];
 
   return (
-    <div className="space-y-2">
+    <div className={styleClass("creditsBadgeRoot")}>
       {/* Compact display */}
-      <div className="flex items-center gap-2 sm:gap-3">
-        <div className="flex items-center gap-0.5 sm:gap-1 font-mono text-xs sm:text-sm text-foreground">
+      <div className={styleClass("creditsBadgeBreakdown")}>
+        <div className={styleClass("creditsBadgeValues")}>
           {[L, T, P].map((val, i) => (
-            <span key={i} className="flex items-center">
-              <span className="text-muted-foreground text-[10px] sm:text-xs">{labels[i]}</span>
-              <span className="ml-0.5">{val}</span>
-              {i < 2 && <span className="text-muted-foreground/50 mx-0.5 sm:mx-1">·</span>}
+            <span key={i} className={styleClass("creditsBadgePair")}>
+              <span className={styleClass("creditsBadgeLabel")}>
+                {labels[i]}
+              </span>
+              <span className={styleClass("creditsBadgeValue")}>{val}</span>
+              {i < 2 && (
+                <span className={styleClass("creditsBadgeDot")}>·</span>
+              )}
             </span>
           ))}
         </div>
-        <div className="h-3 sm:h-4 w-px bg-border" />
-        <div className="flex items-center gap-1">
-          <span className="text-[10px] sm:text-xs text-muted-foreground">Credits</span>
-          <span className="font-mono font-semibold text-foreground">{C}</span>
+        <div className={styleClass("creditsBadgeDivider")} />
+        <div className={styleClass("creditsBadgeTotal")}>
+          <span className={styleClass("creditsBadgeTotalLabel")}>Credits</span>
+          <span className={styleClass("creditsBadgeTotalValue")}>{C}</span>
         </div>
       </div>
 
       {/* Visual bar */}
-      <div className="flex items-center gap-0.5 h-1.5 sm:h-2">
+      <div className={styleClass("creditsBadgeDetails")}>
         {[L, T, P].map((val, i) => (
           <div
             key={i}
-            className="h-full bg-foreground/20 first:rounded-l last:rounded-r"
+            className={styleClass("creditsBadgeDetail")}
             style={{ width: `${Math.max(val * 16, 4)}px` }}
             title={`${fullLabels[i]}: ${val} hr/week`}
           />

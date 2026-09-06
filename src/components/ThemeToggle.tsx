@@ -1,5 +1,8 @@
 "use client";
 
+import { styles } from "@/styles/site.stylex";
+import { styleClass } from "@/styles/classes";
+
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
@@ -10,13 +13,19 @@ export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Preserve the existing placeholder until the client theme is available.
     setMounted(true);
   }, []);
 
   if (!mounted) {
     return (
-      <Button variant="ghost" size="icon" className="h-8 w-8">
-        <Sun className="h-3.5 w-3.5" />
+      <Button
+        variant="ghost"
+        size="icon"
+        xstyle={styles.themeTogglePlaceholder}
+        className="sx-themeTogglePlaceholder"
+      >
+        <Sun className={styleClass("themeTogglePlaceholderIcon")} />
       </Button>
     );
   }
@@ -25,15 +34,16 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      className="h-8 w-8"
+      xstyle={styles.themeToggleButton}
+      className="sx-themeToggleButton"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
-        <Sun className="h-3.5 w-3.5" />
+        <Sun className={styleClass("themeToggleSun")} />
       ) : (
-        <Moon className="h-3.5 w-3.5" />
+        <Moon className={styleClass("themeToggleMoon")} />
       )}
-      <span className="sr-only">Toggle theme</span>
+      <span className={styleClass("themeToggleLabel")}>Toggle theme</span>
     </Button>
   );
 }

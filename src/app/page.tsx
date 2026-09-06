@@ -1,5 +1,8 @@
 "use client";
 
+import { styles } from "@/styles/site.stylex";
+import { styleClass } from "@/styles/classes";
+
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SubjectTypeSelector } from "@/components/SubjectTypeSelector";
@@ -33,10 +36,13 @@ export default function Home() {
 
   useEffect(() => {
     if (selectedType) {
-      const allSubjects = getSubjectsByType(selectedType as Subject["Type of Subject"]);
-      const filtered = withMinor 
-        ? allSubjects 
-        : allSubjects.filter(s => s["Minor-Only"] !== "yes");
+      const allSubjects = getSubjectsByType(
+        selectedType as Subject["Type of Subject"],
+      );
+      const filtered = withMinor
+        ? allSubjects
+        : allSubjects.filter((s) => s["Minor-Only"] !== "yes");
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Preserve the existing category/minor reset timing.
       setSubjects(filtered);
     }
   }, [selectedType, withMinor]);
@@ -44,7 +50,7 @@ export default function Home() {
   // Filter subjects for search based on minor mode
   const searchableSubjects = useMemo(() => {
     const all = getSubjects();
-    return withMinor ? all : all.filter(s => s["Minor-Only"] !== "yes");
+    return withMinor ? all : all.filter((s) => s["Minor-Only"] !== "yes");
   }, [withMinor]);
 
   const handleSelectType = (type: string) => {
@@ -73,71 +79,77 @@ export default function Home() {
     setMobileShowPanel(false);
   };
 
-  const handleSearchSelect = useCallback((type: string, code: string) => {
-    setSelectedType(type);
-    const allSubjects = getSubjectsByType(type as Subject["Type of Subject"]);
-    const filtered = withMinor 
-      ? allSubjects 
-      : allSubjects.filter(s => s["Minor-Only"] !== "yes");
-    setSubjects(filtered);
-    setSelectedCode(code);
-    setMobileShowPanel(true);
-  }, [withMinor]);
+  const handleSearchSelect = useCallback(
+    (type: string, code: string) => {
+      setSelectedType(type);
+      const allSubjects = getSubjectsByType(type as Subject["Type of Subject"]);
+      const filtered = withMinor
+        ? allSubjects
+        : allSubjects.filter((s) => s["Minor-Only"] !== "yes");
+      setSubjects(filtered);
+      setSelectedCode(code);
+      setMobileShowPanel(true);
+    },
+    [withMinor],
+  );
 
   // Minor toggle component
   const MinorToggle = () => (
     <button
       onClick={() => setWithMinor(!withMinor)}
-      className={`flex items-center gap-1.5 h-8 px-2.5 rounded-md text-xs transition-colors ${
-        withMinor 
-          ? "bg-purple-500/20 text-purple-400 border border-purple-500/30" 
-          : "bg-muted text-muted-foreground hover:bg-accent"
-      }`}
+      className={styleClass(withMinor ? "minorEnabled" : "minorDisabled")}
     >
-      <span className={`w-2 h-2 rounded-full ${withMinor ? "bg-purple-400" : "bg-muted-foreground/50"}`} />
-      <span className="hidden sm:inline">Minor</span>
+      <span
+        className={styleClass(
+          withMinor ? "minorDotEnabled" : "minorDotDisabled",
+        )}
+      />
+      <span className={styleClass("pageMinorLabel")}>Minor</span>
     </button>
   );
 
   // Browser view with sidebar and content
   if (selectedType) {
     return (
-      <div className="h-[100dvh] flex flex-col overflow-hidden">
+      <div className={styleClass("pageBrowser")}>
         {/* Header */}
-        <header className="h-12 border-b border-border flex items-center justify-between px-3 bg-background shrink-0">
-          <div className="flex items-center gap-2">
+        <header className={styleClass("pageBrowserHeader")}>
+          <div className={styleClass("pageBrowserHeading")}>
             <Button
               variant="ghost"
               size="sm"
               onClick={handleBack}
-              className="gap-1.5 h-8 px-2"
+              xstyle={styles.pageBackButton}
+              className="sx-pageBackButton"
             >
-              <ArrowLeft className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline">Back</span>
+              <ArrowLeft className={styleClass("pageBackIcon")} />
+              <span className={styleClass("pageBackLabel")}>Back</span>
             </Button>
-            <span className="text-xs font-mono text-muted-foreground">
+            <span className={styleClass("pageCurrentType")}>
               {selectedType}
             </span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className={styleClass("pageBrowserActions")}>
+            {/* eslint-disable-next-line react-hooks/static-components -- Preserve the existing toggle mount lifecycle during the styling port. */}
             <MinorToggle />
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setSearchOpen(true)}
-              className="gap-1.5 h-8 px-2"
+              xstyle={styles.pageBrowserSearch}
+              className="sx-pageBrowserSearch"
             >
-              <Search className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline text-xs text-muted-foreground">⌘K</span>
+              <Search className={styleClass("pageBrowserSearchIcon")} />
+              <span className={styleClass("pageBrowserShortcut")}>⌘K</span>
             </Button>
             <ThemeToggle />
           </div>
         </header>
 
         {/* Main content */}
-        <div className="flex-1 min-h-0 overflow-hidden">
+        <div className={styleClass("pageBrowserBody")}>
           {/* Mobile Layout */}
-          <div className="md:hidden h-full">
+          <div className={styleClass("pageMobileBrowser")}>
             {!mobileShowPanel ? (
               <SubjectSidebar
                 subjects={subjects}
@@ -146,19 +158,20 @@ export default function Home() {
                 onReorder={handleReorder}
               />
             ) : (
-              <div className="h-full flex flex-col">
-                <div className="flex items-center p-2 border-b border-border shrink-0">
+              <div className={styleClass("pageMobileCurriculum")}>
+                <div className={styleClass("pageMobileToolbar")}>
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={handleMobileBack}
-                    className="gap-1.5 h-8"
+                    xstyle={styles.pageMobileBack}
+                    className="sx-pageMobileBack"
                   >
-                    <ArrowLeft className="h-3.5 w-3.5" />
+                    <ArrowLeft className={styleClass("pageMobileBackIcon")} />
                     Back to list
                   </Button>
                 </div>
-                <div className="flex-1 h-full overflow-hidden">
+                <div className={styleClass("pageMobileContent")}>
                   <CurriculumPanel code={selectedCode} />
                 </div>
               </div>
@@ -166,7 +179,7 @@ export default function Home() {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden md:flex h-full">
+          <div className={styleClass("pageDesktopBrowser")}>
             <SubjectSidebar
               subjects={subjects}
               selectedCode={selectedCode}
@@ -189,43 +202,45 @@ export default function Home() {
 
   // Landing page
   return (
-    <div className="min-h-[100dvh] flex flex-col">
+    <div className={styleClass("pageLanding")}>
       {/* Header */}
-      <header className="h-12 border-b border-border flex items-center justify-between px-4 bg-background shrink-0">
-        <span className="text-sm font-medium">CCE &apos;27</span>
-        <div className="flex items-center gap-1">
+      <header className={styleClass("pageLandingHeader")}>
+        <span className={styleClass("pageBrand")}>CCE &apos;27</span>
+        <div className={styleClass("pageLandingActions")}>
+          {/* eslint-disable-next-line react-hooks/static-components -- Preserve the existing toggle mount lifecycle during the styling port. */}
           <MinorToggle />
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setSearchOpen(true)}
-            className="gap-1.5 h-8 px-2"
+            xstyle={styles.pageLandingSearch}
+            className="sx-pageLandingSearch"
           >
-            <Search className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline text-xs text-muted-foreground">⌘K</span>
+            <Search className={styleClass("pageLandingSearchIcon")} />
+            <span className={styleClass("pageLandingShortcut")}>⌘K</span>
           </Button>
           <ThemeToggle />
         </div>
       </header>
 
       {/* Hero */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-8">
-        <div className="max-w-2xl w-full space-y-8">
+      <main className={styleClass("pageLandingMain")}>
+        <div className={styleClass("pageLandingContent")}>
           {/* Title */}
-          <div className="text-center space-y-3">
-            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
-              Electives Reference
-            </h1>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto">
+          <div className={styleClass("pageIntro")}>
+            <h1 className={styleClass("pageHeading")}>Electives Reference</h1>
+            <p className={styleClass("pageSubtitle")}>
               Browse curriculum details and rank your preferred electives
             </p>
-            <p className="text-xs text-muted-foreground max-w-md mx-auto">
-              This is for helping you view the curriculum. To learn more information to make your choice - use this website by Mugdha Chatterjee:{" "}
-              <a 
-                href="https://manipal-electives.vercel.app/guide" 
-                target="_blank" 
+            <p className={styleClass("pageGuideText")}>
+              This is for helping you view the curriculum. To learn more
+              information to make your choice - use this website by Mugdha
+              Chatterjee:{" "}
+              <a
+                href="https://manipal-electives.vercel.app/guide"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
+                className={styleClass("pageGuideLink")}
               >
                 https://manipal-electives.vercel.app/guide
               </a>
@@ -235,27 +250,35 @@ export default function Home() {
           {/* Search hint */}
           <button
             onClick={() => setSearchOpen(true)}
-            className="mx-auto flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-card hover:bg-accent transition-colors"
+            className={styleClass("pageSearchTrigger")}
           >
-            <Search className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">Search subjects...</span>
-            <kbd className="ml-4 px-2 py-0.5 bg-muted rounded text-[10px] text-muted-foreground">⌘K</kbd>
+            <Search className={styleClass("pageSearchIcon")} />
+            <span className={styleClass("pageSearchPlaceholder")}>
+              Search subjects...
+            </span>
+            <kbd className={styleClass("pageSearchShortcut")}>⌘K</kbd>
           </button>
 
           {/* Minor Mode Hint */}
-          <div className="text-center">
-            <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border transition-colors ${
-              withMinor 
-                ? "bg-purple-500/10 border-purple-500/30 text-purple-400" 
-                : "bg-muted/50 border-border text-muted-foreground"
-            }`}>
-              <span className={`w-2 h-2 rounded-full ${withMinor ? "bg-purple-400" : "bg-muted-foreground/50"}`} />
-              <span className="text-xs">
-                {withMinor ? "Showing all subjects including Minor-only" : "Hiding Minor-only subjects"}
+          <div className={styleClass("pageMinorHintContainer")}>
+            <div
+              className={styleClass(
+                withMinor ? "minorHintEnabled" : "minorHintDisabled",
+              )}
+            >
+              <span
+                className={styleClass(
+                  withMinor ? "minorDotEnabled" : "minorDotDisabled",
+                )}
+              />
+              <span className={styleClass("pageMinorHintLabel")}>
+                {withMinor
+                  ? "Showing all subjects including Minor-only"
+                  : "Hiding Minor-only subjects"}
               </span>
-              <button 
+              <button
                 onClick={() => setWithMinor(!withMinor)}
-                className="text-xs underline underline-offset-2 hover:text-foreground"
+                className={styleClass("pageMinorHintAction")}
               >
                 {withMinor ? "Hide" : "Show"}
               </button>
@@ -270,20 +293,24 @@ export default function Home() {
           />
 
           {/* Legend */}
-          <div className="text-center">
-            <div className="inline-flex flex-wrap justify-center gap-x-4 gap-y-1 text-[10px] text-muted-foreground">
+          <div className={styleClass("pageLegend")}>
+            <div className={styleClass("pageLegendItems")}>
               <span>● Official curriculum</span>
               <span>◐ Historical mapping</span>
               <span>◌ External only</span>
               <span>○ Limited info</span>
-              {withMinor && <span className="text-purple-400">M Minor-only</span>}
+              {withMinor && (
+                <span className={styleClass("pageMinorLegend")}>
+                  M Minor-only
+                </span>
+              )}
             </div>
           </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="py-3 text-center text-[10px] text-muted-foreground border-t border-border shrink-0">
+      <footer className={styleClass("pageFooter")}>
         Data from MIT records
       </footer>
 
